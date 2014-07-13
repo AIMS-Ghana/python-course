@@ -1,4 +1,6 @@
 ---
+layout: section
+title: Course Home
 ---
 ###Overview
 
