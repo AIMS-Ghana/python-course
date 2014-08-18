@@ -1,3 +1,9 @@
 absoluteurl: http://AIMS-Ghana.github.io
 baseurl: ''
 markdown: kramdown
+collections:
+  days:
+    output: true
+    layout: section
+  students:
+    output: false
