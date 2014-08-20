@@ -3,11 +3,11 @@ title: "Course Home"
 layout: section
 ---
 
-###Overview
+## Overview
 
 Site for the AIMS-Ghana Introduction to Programming with Python course
 
-###Course Description
+## Course Description
 
 The course covers (1) software development for (2) scientific applications in
 (3) Python.  The course assumes limited programming background, but familiarity
