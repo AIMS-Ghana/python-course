@@ -4,6 +4,12 @@ markdown: kramdown
 collections:
   days:
     output: true
-    layout: section
   students:
     output: false
+defaults:
+  -
+    scope:
+      path: ""
+      type: "days"
+    values:
+      layout: "section"
