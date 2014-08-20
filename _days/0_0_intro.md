@@ -14,17 +14,36 @@ title: Overview
 ## Machine Setup
 
 1. [PyCharm](http://www.jetbrains.com/pycharm/)
-2. optional: [SmartGit](http://www.syntevo.com/smartgit/)
+2. Configure PyCharm
+3. optional: [SmartGit](http://www.syntevo.com/smartgit/)
 
 ## Course Overview
 
-Our goal for the Python course is two-fold:
+We have several goals for the Python course:
 
- - for *you* to be able to accomplish basic scientific computing tasks
- - for *you* to be able to teach yourself how to accomplish less simple tasks
+ - for *you* to be able to accomplish basic scientific computing tasks in Python
+ - for *others* to be able to understand what you accomplished
+ - for *you* and *others* to be able to have confidence in your results
+ - for *you* to be able to teach yourself how to have those for less simple tasks
 
-We will also be practicing good development habits.
+The first item entails a basic understand of how to direct the computer to do work
+via Python.
 
-This means that you will be getting lots of practice, lots of feedback, but you
-will also be expected to figure out how to do many tasks with limited guidance
-from me.
+The second corresponds to doing that in a literate way.
+
+The third assumes the second, but also includes that your code has a development
+history and testing results.
+
+The final item, however, means that this class may feel very unfamiliar.  We
+will typically start with a short discussion of a concept.  I will then pose
+many problems related to that concept.  *You* will have to grapple with that concept and figure out how to
+solve the problems.  I will answer questions, but I will always ask you a few questions of my own:
+
+ - What have you tried?  What was the result of that?
+ - What documentation or WWW resource did you consult?
+ - Which of your classmates have you talked to about the issue?
+
+If I get the same question more than once, I will refer the questioner to their
+classmates that know the answer.
+
+I know that many students are accustomed to getting a step-by-step recipe.
