@@ -1,0 +1,137 @@
+---
+---
+
+$background: #111111;
+$foreground: #f8f8f2;
+$comment: #75715E;
+$keyword: #66d9ef;
+$string: #e6db74;
+$number: #ae81ff;
+$variable: #00FF00;
+$name: #a6e22e;
+$operator: #f92672;
+$const: #663300;
+
+.highlight {
+  background: $background;
+  color: $foreground;
+  padding: 0.2em 0.9em;
+  margin-bottom: 1em;
+  font: normal normal normal 115%/normal 'Monaco', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace !important;
+  line-height: 1.1em;
+  overflow: auto;
+  font-size: 1.0em;
+  border: 1px solid #CCC;
+
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+
+  code, pre {
+    margin: 0.1em;
+  }
+
+  span {
+    font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
+    font-size:1em;
+  }
+
+  .hll { background-color: #49483e } /* unused? */
+
+  .c, .cm, .c1, .cs {
+    color: $comment;
+    font-style: italic
+  }
+  /* Comment,
+     Comment.Multiline,
+     Comment.Single,
+     Comment.Special */
+  .cp, .cs {
+    font-weight: bold;
+  }
+  /* Comment.Preproc,
+     Comment.Special
+   */
+
+  .k, .kc, .kd, .kt, .kp {
+    color: $keyword
+  }
+  /* Keyword,
+     Keyword.Constant
+     Keyword.Declaration,
+     Keyword.Type,
+     Keyword.Pseudo */
+  .kn { color: #f92672 } /* Keyword.Namespace */
+  .kr { color: #6600CC } /* Keyword.Reserved */
+
+  .err { color: #960050; background-color: #1e0010 } /* Error */
+
+  .nt, .ow, .o {
+    color: $operator
+  }
+  /* Name.Tag,
+     Operator.Word,
+     Operator */
+
+
+  .ge { font-style: italic } /* Generic.Emph */
+  .gs { font-weight: bold } /* Generic.Strong */
+
+  .l, .m, .mf, .mh, .mi, .mo, .il {
+    color: $number
+  }
+  /* Literal,
+     Literal.Number
+     Literal.Number.Float
+     Literal.Number.Hex
+     Literal.Number.Integer
+     Literal.Number.Oct
+     Literal.Number.Integer.Long */
+
+  .s, .sb, .sc, .sd, .s2, .sh, .si, .sx, .sr, .s1 {
+    color: $string
+  }
+  /* Literal.String
+     Literal.String.Backtick,
+     Literal.String.Char,
+     Literal.String.Doc,
+     Literal.String.Double,
+     Literal.String.Heredoc
+     Literal.String.Interpol
+     Literal.String.Other,
+     Literal.String.Regex,
+     Literal.String.Single */
+
+  .se { color: $number } /* Literal.String.Escape */
+  .ss { color: #990073 } /* Literal.String.Symbol */
+
+  .ld { color: $string } /* Literal.Date */
+
+  .nv, .vc, .vg, .vi { color: $variable }
+  /* Name.Variable,
+     Name.Variable.Class,
+     Name.Variable.Global,
+     Name.Variable.Instance */
+
+  .na, .nc, .nd, .ne, .nf, .nx {
+    color: $name
+  }
+  /* Name.Attribute,
+     Name.Class,
+     Name.Decorator,
+     Name.Exception,
+     Name.Function,
+     Name.Other */
+
+  .nb { color: #FF66FF } /* Name.Builtin */
+  .bp { color: #3030FF } /* Name.Builtin.Pseudo */
+
+  .no, .ni, .nn {
+    color: $const
+  }
+  /* Name.Constant,
+     Name.Entity,
+     Name.Namespace */
+
+
+}
