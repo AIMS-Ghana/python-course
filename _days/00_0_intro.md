@@ -46,4 +46,16 @@ solve the problems.  I will answer questions, but I will always ask you a few qu
 If I get the same question more than once, I will refer the questioner to their
 classmates that know the answer.
 
-I know that many students are accustomed to getting a step-by-step recipe.
+I know that many students are accustomed to getting a step-by-step recipe, and
+then getting feedback on applying that recipe.  In this class, you will be expected
+to find the recipe as well.  Once you are outside these walls, whether you want
+to continue in research or seek employment in industry or start your own business,
+you will be expected to solve problems.  None of the instructors can solve those
+problems for you.
+
+## PREP FOR FIRST SESSION
+
+ - review some programming intros: [this](http://codingintro.com/),
+ [that](https://www.khanacademy.org/computing/cs/programming/intro-to-programming/v/programming-intro),
+ and [another](http://en.wikiversity.org/wiki/Introduction_to_Programming)
+ - complete [github tutorial](https://try.github.io/levels/1/challenges/1)
