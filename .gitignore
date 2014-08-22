@@ -2,3 +2,5 @@
 _site/*
 
 */.idea/*
+
+*__pycache__*
