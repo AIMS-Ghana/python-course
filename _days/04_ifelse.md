@@ -28,3 +28,20 @@ be some sharp transitions in behavior.  For example, consider what happens here:
 {% endhighlight %}
 
 **DISCUSS: WHAT ARE THE ISSUES WITH THAT RESULT? HOW WOULD WE WANT THEM TO BE RESOLVED?**
+
+## `if` for Domain Restriction
+
+In our geometry cases, we have fairly simple restrictions on domain: dimensions should
+not be negative.
+
+How would we express that?  Here is one possibility:
+
+{% highlight python %}
+{% include dimension_validate.py %}
+{% endhighlight %}
+
+## Task: Add Validation to Your Geometric Formulae
+
+## PREP FOR NEXT SESSION
+
+ - read about errors, error handling
