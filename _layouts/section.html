@@ -8,5 +8,8 @@
 <div class="main">
 {{ content }}
 </div>
+{% if page.collection == "days" %}
+{% include daynav.liquid %}
+{% endif %}
 </body>
 </html>
