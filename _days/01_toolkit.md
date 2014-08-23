@@ -17,6 +17,12 @@ whatever you have made work for you when solving complex math problems.
 **DISCUSSION BREAK: BRIEFLY DESCRIBE HOW YOU WORKED THROUGH A PROBLEM WHICH, AT LEAST
 INITIALLY, TOOK MANY STEPS.**
 
+Note that *brains* is plural.  The social aspect of programming is enormously enriching.
+Like any discipline, the work can be done for ourselves; but programming is at
+heart about expressing ideas.  A fair portion of the resulting software is shared
+with others - someone else will run the program to enjoy its result - and most
+any sophisticated project requires many minds of the life of the work.
+
 ## Python Console / Interactive Shell / REPL
 
 **WHAT DOES REPL STAND FOR?  EXPLAIN THE CONCEPT.**
@@ -65,7 +71,22 @@ We will start with the task that you should always perform when you are first
 trying to learn a new language: create and run a program that will produce the
 phrase `hello world` on an appropriate output device.
 
-## Git - GitHub
+Start the PyCharm application.  There will be some initial use questions.  You
+should create a project named XYZ (TODO: they should have cloned a project?).
+
+Now create a new Python file (either via hotkeys ctrl-N, or by right clicking
+the project and selecting \"new...\", or by using the dropdown menus) named
+`hw` (the `.py` extension will be added automatically).
+
+**WRITE CODE THAT CAUSES THE STRING `HELLO WORLD` TO APPEAR WHEN YOU RUN THE
+SCRIPT**
+
+**NEXT LAUNCH THE CODE FROM THE TERMINAL COMMAND PROMPT**
+
+These two tasks are fundamentals you will repeat throughout the course:
+creating a script and verifying that it works by running it.
+
+## Git + GitHub
 
 When you are writing, being able to have drafts provides several benefits:
 
@@ -80,3 +101,30 @@ there are several flavors of tools falling under the broad category of *version 
 which provide a drafting mechanism.
 
 As part of the course, we will use one of those tools: `git`.
+
+We will now turn the project directory you just created into a repository
+and connect it to a remote repository.
+
+**RECALLING THE STEPS FROM THE PREREADING, CONNECT A LOCAL GIT REPOSITORY
+TO A REMOTE REPOSITORY ON GITHUB.**
+
+We create a repository to provide history, a means to create drafts, a way to
+share code, among other reasons.  We will demonstrate the first two with the
+next tasks.
+
+We will make a minor modification to our `hw` script, to narrow our ambitions:
+
+**CHANGE YOUR SCRIPT TO SAY HELLO TO GHANA INSTEAD OF THE WHOLE WORLD.**
+
+Now that we have made changes, we need to record our progress in the repository.
+
+**RECALLING THE STEPS FROM THE PREREADING, COMMIT YOUR CHANGES AND THEN UPDATE
+THE REMOTE REPOSITORY.**
+
+**ONCE YOU HAVE UPDATED, LOCATE THE REPOSITORY IN YOUR GITHUB ACCOUNT AND REVIEW
+THE COMMIT RECORDS.**
+
+## PREP FOR NEXT SESSION
+
+ - learn how to declare variables and functions in Python (hint: use Google, or
+   consult a classmate, or a textbook)

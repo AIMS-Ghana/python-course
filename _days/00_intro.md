@@ -53,7 +53,7 @@ to continue in research or seek employment in industry or start your own busines
 you will be expected to solve problems.  None of the instructors can solve those
 problems for you.
 
-## PREP FOR FIRST SESSION
+## PREP FOR NEXT SESSION
 
  - review some programming intros: [this](http://codingintro.com/),
  [that](https://www.khanacademy.org/computing/cs/programming/intro-to-programming/v/programming-intro),
