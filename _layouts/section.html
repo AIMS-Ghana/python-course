@@ -2,9 +2,12 @@
 <html>
 <head>
   <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="/css/site.css">
   <link rel="stylesheet" type="text/css" href="/css/python-highlight.css">
 </head>
 <body>
+{% capture nav %}{% include nav.md %}{% endcapture %}
+{{ nav | markdownify }}
 <div class="main">
 {{ content }}
 </div>
