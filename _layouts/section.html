@@ -4,10 +4,17 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" type="text/css" href="{{ site.absoluteurl }}{{ site.baseurl }}/css/site.css">
   <link rel="stylesheet" type="text/css" href="{{ site.absoluteurl }}{{ site.baseurl }}/css/python-highlight.css">
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }
+  });
+  </script>
+  <script type="text/javascript"
+    src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
 </head>
 <body>
-{% capture nav %}{% include nav.md %}{% endcapture %}
-{{ nav | markdownify }}
+{% capture nav %}{% include nav.md %}{% endcapture %}{{ nav | markdownify }}
 <div class="main">
 {{ content }}
 </div>
