@@ -1,5 +1,5 @@
 ---
-title: Testing
+title: Testing I
 ---
 
 ## Proof and Programming
@@ -23,15 +23,35 @@ Having tests associated with our code can provide some of that confidence.
 Consider tests of the previous example calculating geometric properties
 for a square:
 
-{% highlight python %}
-{% include test_square_geom.py %}
-{% endhighlight %}
+{% include pyblock.md target='test_square_geom.py' %}
 
-We can run these tests
+What are the notable points?
+ - new keyword `assert`
+ - function definitions start with `test_`
+
+We can run these tests by right-clicking our project directory and selecting
+\"Run Nosetests...\".  The `nose` module does unit testing using an approach
+with simpler syntax that the built-in `unittest` module.
+
+**QUERY: WHERE ELSE HAVE YOU SEEN TESTS ALREADY?**
+
+The `doctest` functionality is another approach to testing.  It allows for tests
+to be baked directly into your documentation.
 
 ## Task: Write Tests for Your Previous Geometric Functions
 
+Basic requirement: for your previous work with geometric formulae, write tests
+using both the `doctest` approach (which you may have already done) and the `nose`
+approach.  Verify those tests work both via PyCharm and the terminal.
+
+Twist points:
+ - for each of your formulae, write tests that your method *should* handle but
+ currently does not (*e.g.*, what happens when your function receives negative
+ arguments).  These tests should fail.
+
 ## PREP FOR NEXT SESSION
 
- - find and read documentation about `if-elif-else` syntax for Python (e.g., [this](http://www.java2s.com/Code/Python/Language-Basics/If.htm))
- - research input validation (e.g., [this](http://openbookproject.net/pybiblio/tips/wilson/validating.php))
+ - find and read documentation about `if-elif-else` syntax for Python
+ (e.g., [this](http://www.java2s.com/Code/Python/Language-Basics/If.htm))
+ - research input validation
+ (e.g., [this](http://openbookproject.net/pybiblio/tips/wilson/validating.php))

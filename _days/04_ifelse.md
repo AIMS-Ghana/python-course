@@ -36,12 +36,21 @@ not be negative.
 
 How would we express that?  Here is one possibility:
 
-{% highlight python %}
-{% include dimension_validate.py %}
-{% endhighlight %}
+{% include pyblock.md target='dimension_validate.py' %}
+
+That code checks if the argument is a `Number`, and if so, is it greater than zero.
 
 ## Task: Add Validation to Your Geometric Formulae
 
+Using code like that in `dimension_validate.py`, add input validation to your
+geometric functions.  Consider the example:
+
+{% include pyblock.md target='square_geom_with_validation.py' %}
+
+We will be talking more about the last bit, `raise ...`, in the next session.
+For now, you should `raise ValueError("message")`, with an appropriate message
+corresponding to what is wrong with the inputs.
+
 ## PREP FOR NEXT SESSION
 
- - read about errors, error handling
+ - read about [errors and error handling](https://docs.python.org/2/tutorial/errors.html)

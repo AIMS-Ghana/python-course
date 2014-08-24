@@ -53,7 +53,21 @@ to continue in research or seek employment in industry or start your own busines
 you will be expected to solve problems.  None of the instructors can solve those
 problems for you.
 
+Throughout the course we will we have a number of small assignments for you to
+use to acclimatize to programming and to Python.  In the final week, you will
+build a numerical simulation of a differential equation model, and use that
+model to answer some questions about that system.
+
 ## PREP FOR NEXT SESSION
+
+Most of the programming work you do should be accomplished during the sessions,
+though there may be some left over or you may to want to make additional
+improvements.
+
+However, I will typically provide some reading material, and you should expect
+to discuss ideas from that material at the beginning of the next session.
+
+For the next session, the preparatory reading is:
 
  - review some programming intros: [this](http://codingintro.com/),
  [that](https://www.khanacademy.org/computing/cs/programming/intro-to-programming/v/programming-intro),

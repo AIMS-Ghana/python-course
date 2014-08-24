@@ -94,6 +94,8 @@ SCRIPT**
 These two tasks are fundamentals you will repeat throughout the course:
 creating a script and verifying that it works by running it.
 
+For additional PyCharm documentation, try [here](http://www.jetbrains.com/pycharm/webhelp/pycharm.html).
+
 ## Git + GitHub
 
 When you are writing, being able to have drafts provides several benefits:
