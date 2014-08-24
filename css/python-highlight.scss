@@ -12,29 +12,24 @@ $name: #a6e22e;
 $operator: #f92672;
 $const: #663300;
 
-.highlight {
+pre {
   background: $background;
   color: $foreground;
+  margin: 0;
   padding: 0.2em 0.9em;
-  margin-bottom: 1em;
-  font: normal normal normal 115%/normal 'Monaco', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace !important;
-  line-height: 1.1em;
-  overflow: auto;
-  font-size: 1.0em;
   border: 1px solid #CCC;
-
   -moz-border-radius:7px;
   -webkit-border-radius:7px;
   border-radius:7px;
+}
 
-  code, pre {
-    margin: 0.1em;
-  }
+code {
+  margin: 0.1em;
+  font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
+  font-size:1em;
+}
 
-  span {
-    font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
-    font-size:1em;
-  }
+.highlight {
 
   .hll { background-color: #49483e } /* unused? */
 
