@@ -1,5 +1,7 @@
+from numbers import Number
+
 def dimension_validate(dim):
-    if isinstance(dim, (int, float)):
+    if isinstance(dim, Number):
         return dim > 0
     else:
         return False

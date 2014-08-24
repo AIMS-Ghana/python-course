@@ -9,4 +9,4 @@ def test_square_perimeter():
 
 
 def test_fail_square_perimeter():
-    assert square_perimeter(5) == 20
+    assert square_perimeter(4) == 20
