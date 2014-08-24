@@ -34,7 +34,7 @@ $tonelight: #1A1A1A;
       color : $dark;
     }
 
-    &.{{ site.css.active }} {
+    &.active {
       color : $light;
       background-color : $dark;
     }
