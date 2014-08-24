@@ -13,7 +13,7 @@ def square_perimeter(side):
 def square_area(side):
     """
     'square_area' calculates a square's area given a side length:
-    >>> square_perimeter(4)
+    >>> square_area(4)
     16
 
     :param side: the side length
