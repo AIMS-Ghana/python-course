@@ -71,8 +71,16 @@ We will start with the task that you should always perform when you are first
 trying to learn a new language: create and run a program that will produce the
 phrase `hello world` on an appropriate output device.
 
-Start the PyCharm application.  There will be some initial use questions.  You
-should create a project named XYZ (TODO: they should have cloned a project?).
+Start the PyCharm application.  There will be some initial use questions.  If
+you want to have your screen look like mine, you should choose the `darcula`
+theme.
+
+We will make a few other changes in the settings, specifically in
+[appearance](http://www.jetbrains.com/pycharm/webhelp/editor-appearance.html) and
+[testing](http://www.jetbrains.com/pycharm/webhelp/python-integrated-tools.html).
+
+You should create a project named `intro-python`; we will do our course work in
+this directory.
 
 Now create a new Python file (either via hotkeys ctrl-N, or by right clicking
 the project and selecting \"new...\", or by using the dropdown menus) named
