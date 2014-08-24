@@ -16,9 +16,7 @@ important syntax note: indentation in Python
 
 Example:
 
-{% highlight python %}
-{% include square_geom.py %}
-{% endhighlight %}
+{% include pyblock.md target='square_geom.py' %}
 
 Your assignment:
 
