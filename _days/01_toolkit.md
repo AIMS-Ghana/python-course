@@ -29,19 +29,19 @@ any sophisticated project requires many minds of the life of the work.
 
 On a vintage macbook:
 
-{% highlight bash %}
-computername:python-course username$ python3
+~~~
+computername:python-course username$ python3  
 Python 3.3.2 (v3.3.2:d047928ae3f6, May 13 2013, 13:52:24)
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
+Type "help", "copyright", "credits" or "license" for more information.  
 >>>
-{% endhighlight %}
+~~~
 
 This interface can be used to do essentially anything Python.  But: there are
 certain uses that are preferable to others.  Basically, code that is one to
 a few lines:
 
-{% highlight bash %}
+{% highlight python %}
 >>> 2 + 3
 5
 >>> _ + 3
