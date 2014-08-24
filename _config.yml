@@ -1,5 +1,5 @@
 absoluteurl: http://AIMS-Ghana.github.io
-baseurl: ''
+baseurl: '/python-course'
 markdown: kramdown
 css:
   active: "active"
