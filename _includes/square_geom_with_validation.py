@@ -1,4 +1,4 @@
-from dimension_validate import dimension_validate
+from dimension_validate import *
 
 def square_perimeter(side):
     """
@@ -9,7 +9,7 @@ def square_perimeter(side):
     :param side: the side length
     :return: the perimeter (same units as side length)
     """
-    if (dimension_validate(side)):
+    if (dim_validate(side)):
         return 4*side
     else:
-        raise ValueError("side is less than 0")
+        raise ValueError("side is less than 0: "+side)
