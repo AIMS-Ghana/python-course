@@ -11,3 +11,4 @@ title: "Flow Control II: `for`"
 ## PREP FOR NEXT SESSION
 
  - review the Secant method (*e.g.*, [here](http://en.wikipedia.org/wiki/Secant_method))
+ - review the Python `while` syntax

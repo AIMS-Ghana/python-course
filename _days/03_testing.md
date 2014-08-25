@@ -1,5 +1,5 @@
 ---
-title: Testing I
+title: Testing
 ---
 
 ## Proof and Programming
@@ -51,7 +51,9 @@ Twist points:
 
 ## PREP FOR NEXT SESSION
 
- - find and read documentation about `if-elif-else` syntax for Python
- (e.g., [this](http://www.java2s.com/Code/Python/Language-Basics/If.htm))
+ - research Boolean type in Python (*e.g.*, [here](https://docs.python.org/3.4/library/stdtypes.html))
+ - research truth tables (*e.g.*, [here](http://en.wikipedia.org/wiki/Truth_table))
+ - research `if-elif-else` syntax for Python
+ (*e.g.*, [this](http://www.java2s.com/Code/Python/Language-Basics/If.htm))
  - research input validation
- (e.g., [this](http://openbookproject.net/pybiblio/tips/wilson/validating.php))
+ (*e.g.*, [this](http://openbookproject.net/pybiblio/tips/wilson/validating.php))
