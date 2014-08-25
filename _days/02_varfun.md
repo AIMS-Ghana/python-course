@@ -1,5 +1,5 @@
 ---
-title: Variables and Functions
+title: "Variables, Functions"
 ---
 
 ## Mathematical Variables, Parameters, Functions, Equations, *etc*

@@ -1,5 +1,5 @@
 ---
-title: Plotting, Part I
+title: Plotting I
 ---
 
 ## How do we understand results?

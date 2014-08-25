@@ -1,5 +1,5 @@
 ---
-title: Input I
+title: "Input I: `stdin`"
 ---
 
 ## User Input
