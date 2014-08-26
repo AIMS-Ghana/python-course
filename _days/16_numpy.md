@@ -1,3 +1,3 @@
 ---
-title: Numpy
+title: Intro to `numpy`
 ---
