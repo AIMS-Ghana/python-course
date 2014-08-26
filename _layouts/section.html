@@ -17,6 +17,7 @@
 {% capture nav %}{% include nav.md %}{% endcapture %}{{ nav | markdownify }}
 <div class="main">
 {{ content }}
+{% if page.prep %}{% capture pp %}{% include prep.md target=page.prep %}{% endcapture %}{{ pp | markdownify }}{% endif %}
 </div>
 {% if page.collection == "days" %}
 {% include daynav.liquid %}
