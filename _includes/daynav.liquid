@@ -1,11 +1,11 @@
 {% for d in site.days %}
     {% if d.title == page.title %}
         {% unless forloop.first %}
-            <a href="{{ site.baseurl }}{{ prev.url }}" class="prev">{{ prev.title }}</a>
+            <a href="{{ site.absoluteurl }}{{ site.baseurl }}{{ prev.url }}" class="prev">{{ prev.title }}</a>
         {% endunless %}
         {% unless forloop.last %}
             {% assign next = site.days[forloop.index] %}
-            <a href="{{ site.baseurl }}{{ next.url }}" class="next">{{ next.title }}</a>
+            <a href="{{ site.absoluteurl }}{{ site.baseurl }}{{ next.url }}" class="next">{{ next.title }}</a>
         {% endunless %}
 
     {% endif %}
