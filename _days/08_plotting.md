@@ -1,13 +1,15 @@
 ---
-title: Plotting I
+title: Plotting
 ---
 
-## How do we understand results?
+## How Do We Understand Results?
 
-plotting
+Sometimes, we want mathematical results in terms of a single numerical
+outcome.  For example, the shape parameters or moments of a distribution.
+
+However, often we may understand more from several points, or indeed a
+continuous line or surface.
 
 ## Basic Matplotlib
 
-{% highlight python %}
-some python stuff
-{% endhighlight%}
+{% include pyblock.md target="plot_i.py" %}
