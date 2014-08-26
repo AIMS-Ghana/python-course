@@ -1,5 +1,6 @@
 ---
 title: "Variables, Functions"
+prep: testing
 ---
 
 ## Mathematical Variables, Parameters, Functions, Equations, *etc*
@@ -34,14 +35,15 @@ Example:
 
 Your assignment:
 
+ - create a file in your local repository named `geom_formulae.py`
  - pick at least 10 other shapes or solids for geometric properties (*e.g.*,
    perimeter, area, volume, surface area)
- - implement those formulae as functions and verify the results for dimensions
+ - implement those formulae as functions  and verify the results for dimensions
  that you can check with pen and paper
- - bonus: who can implement the most formulae?
+ - challenge: who can implement the most formulae?
 
 Feedback will be out of 10 points, 2 points corresponds to passing.  Assignments
-are turned in by committing your work to your repository.
+are turned in by pushing your work to your GitHub repository.
 
  - To get any points at all, you must earn these 2:
     * have at least ten formulae, 1 point
@@ -61,10 +63,5 @@ Future assignments will be evaluated similarly: a few points for the absolute
 minimum, a point for checking classmates work, more points for following good
 coding practices, and then a point or two for a twist.
 
-## PREP FOR NEXT SESSION
-
- - [Nose testing intro](http://ivory.idyll.org/articles/nose-intro.html)
- - [testing in PyCharm](http://confluence.jetbrains.com/display/PYH/Creating+and+running+a+Python+unit+test);
- warning: written assuming using unittest, so there are extra details that will
- not be relevant to testing with `nose`
- - using [doctest](http://pymotw.com/2/doctest/)
+All assignments are turned in by (1) pushing your work to your github repository,
+and (2) by emailing the pertinent files to in reply to the assignments email.

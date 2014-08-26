@@ -1,5 +1,6 @@
 ---
 title: Overview
+prep: toolkit
 ---
 
 ## Introductions
@@ -13,9 +14,9 @@ title: Overview
 
 ## Machine Setup
 
-1. [PyCharm](http://www.jetbrains.com/pycharm/)
+1. [PyCharm](http://www.jetbrains.com/pycharm/) (should be installed)
 2. Configure PyCharm
-3. optional: [SmartGit](http://www.syntevo.com/smartgit/)
+3. optional for personal machines: [SmartGit](http://www.syntevo.com/smartgit/)
 
 ## Course Overview
 
@@ -29,15 +30,16 @@ We have several goals for the Python course:
 The first item entails a basic understand of how to direct the computer to do work
 via Python.
 
-The second corresponds to doing that in a literate way.
+The second corresponds to doing that in a code-literate (programate? algorate?) way.
 
 The third assumes the second, but also includes that your code has a development
 history and testing results.
 
 The final item, however, means that this class may feel very unfamiliar.  We
 will typically start with a short discussion of a concept.  I will then pose
-many problems related to that concept.  *You* will have to grapple with that concept and figure out how to
-solve the problems.  I will answer questions, but I will always ask you a few questions of my own:
+many problems related to that concept.  *You* will have to grapple with that
+concept and figure out how to solve the problems.  I will answer questions, but
+I will always ask you a few questions of my own:
 
  - What have you tried?  What was the result of that?
  - What documentation or WWW resource did you consult?
@@ -57,19 +59,3 @@ Throughout the course we will we have a number of small assignments for you to
 use to acclimatize to programming and to Python.  In the final week, you will
 build a numerical simulation of a differential equation model, and use that
 model to answer some questions about that system.
-
-## PREP FOR NEXT SESSION
-
-Most of the programming work you do should be accomplished during the sessions,
-though there may be some left over or you may to want to make additional
-improvements.
-
-However, I will typically provide some reading material, and you should expect
-to discuss ideas from that material at the beginning of the next session.
-
-For the next session, the preparatory reading is:
-
- - review some programming intros: [this](http://codingintro.com/),
- [that](https://www.khanacademy.org/computing/cs/programming/intro-to-programming/v/programming-intro),
- and [another](http://en.wikiversity.org/wiki/Introduction_to_Programming)
- - complete [github tutorial](https://try.github.io/levels/1/challenges/1)

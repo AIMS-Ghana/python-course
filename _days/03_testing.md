@@ -1,5 +1,6 @@
 ---
 title: Testing
+prep: ifelse
 ---
 
 ## Proof and Programming
@@ -18,7 +19,7 @@ to given us *confidence*, if not certainty, in the results of our computations.
 
 Having tests associated with our code can provide some of that confidence.
 
-## Unit Testing With Nose
+## Unit Testing With `nose`, `doctest`
 
 Consider tests of the previous example calculating geometric properties
 for a square:
@@ -42,18 +43,10 @@ to be baked directly into your documentation.
 
 Basic requirement: for your previous work with geometric formulae, write tests
 using both the `doctest` approach (which you may have already done) and the `nose`
-approach.  Verify those tests work both via PyCharm and the terminal.
+approach.  Verify those tests work both via PyCharm and the terminal; your
+submission should include a bash script that will run all your tests.
 
 Twist points:
  - for each of your formulae, write tests that your method *should* handle but
  currently does not (*e.g.*, what happens when your function receives negative
  arguments).  These tests should fail.
-
-## PREP FOR NEXT SESSION
-
- - research Boolean type in Python (*e.g.*, [here](https://docs.python.org/3.4/library/stdtypes.html))
- - research truth tables (*e.g.*, [here](http://en.wikipedia.org/wiki/Truth_table))
- - research `if-elif-else` syntax for Python
- (*e.g.*, [this](http://www.java2s.com/Code/Python/Language-Basics/If.htm))
- - research input validation
- (*e.g.*, [this](http://openbookproject.net/pybiblio/tips/wilson/validating.php))

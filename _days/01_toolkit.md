@@ -1,5 +1,6 @@
 ---
 title: Toolkit
+prep: varfun
 ---
 
 ## Pen[cil], Paper, Brains
@@ -31,8 +32,8 @@ On a vintage macbook:
 
 ~~~
 computername:python-course username$ python3  
-Python 3.3.2 (v3.3.2:d047928ae3f6, May 13 2013, 13:52:24)
-[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Python 3.4.1 (default, May 19 2014, 13:10:29)
+[GCC 4.2.1 Compatible Apple LLVM 5.1 (clang-503.0.40)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.  
 >>>
 ~~~
@@ -54,11 +55,11 @@ a few lines:
 >>>
 {% endhighlight %}
 
-*etc* - with what you know now, you can use it like a calculator.  As we encounter
+*etc.* - with what you know now, you can use it like a calculator.  As we encounter
 more syntax, you will be able to expand your usage in the interpreter.  However,
 the best uses will continue to be few line interactions.
 
-**WHAT DOES THE UNDERSCORE (`_`) APPEAR TO BE DOING?**
+**QUERY: WHAT DOES THE UNDERSCORE (`_`) APPEAR TO BE DOING?**
 
 ## Python Scripts, Running, Writing in an IDE - Pycharm
 
@@ -133,8 +134,3 @@ THE REMOTE REPOSITORY.**
 
 **ONCE YOU HAVE UPDATED, LOCATE THE REPOSITORY IN YOUR GITHUB ACCOUNT AND REVIEW
 THE COMMIT RECORDS.**
-
-## PREP FOR NEXT SESSION
-
- - learn how to declare variables and functions in Python (hint: use Google, or
-   consult a classmate, or a textbook)
