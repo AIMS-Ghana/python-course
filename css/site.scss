@@ -19,8 +19,10 @@ $tonelight: #1A1A1A;
   position: fixed;
   top: 1px;
   list-style-type: none;
-  background-color : $paledark;
+  background-color: $paledark;
   border-bottom-right-radius: 5px;
+  height: 100%;
+  overflow-y: auto;
 
   li {
 
@@ -30,17 +32,17 @@ $tonelight: #1A1A1A;
     border-bottom-right-radius: 5px;
 
     &:hover {
-      background-color : $light;
+      background-color: $light;
       color : $dark;
     }
 
     &.active {
       color : $light;
-      background-color : $dark;
+      background-color: $dark;
     }
 
     a {
-	    text-decoration : none;
+	    text-decoration: none;
 	    color : inherit;
 	    padding : 0.2em 0.5em;
 	    display : block;
@@ -52,6 +54,7 @@ $tonelight: #1A1A1A;
 
 .main {
 
+  display: inline-block;
   max-width : 50em;
   margin-left : 13em;
   padding : 1em;
@@ -99,4 +102,24 @@ body {
   background-color : black;
   font-family: sans-serif;
   margin : 0px;
+
+  .prevnext {
+    position: fixed;
+    left: 80%;
+    width: 20%;
+    background-color: rgba(0,0,0,0.5);
+
+    a {
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+
+    .prev:before { content:"<- " }
+    .prev { margin-left:0; }
+
+    .next:after { content:" ->" }
+    .next { float:right; }
+
+  }
 }
