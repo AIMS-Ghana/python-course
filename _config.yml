@@ -19,3 +19,4 @@ defaults:
 exclude:
  - run.sh
  - Gemfile
+ - README.md
