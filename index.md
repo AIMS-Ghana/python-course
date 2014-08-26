@@ -39,3 +39,9 @@ scientific reproducibility:
  - version control / data management
  - unit testing
  - literate programming
+
+## Other Resources
+
+ - Coursera Courses (starting shortly after this one):
+   * [for interactive applications](https://www.coursera.org/course/interactivepython)
+   * [for basic programming](https://www.coursera.org/course/pythonlearn)
