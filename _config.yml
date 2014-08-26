@@ -16,3 +16,6 @@ defaults:
       type: "days"
     values:
       layout: "section"
+exclude:
+ - run.sh
+ - Gemfile
