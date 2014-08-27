@@ -108,6 +108,8 @@ body {
     left: 80%;
     width: 20%;
     background-color: rgba(0,0,0,0.5);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 
     a {
       display: block;
@@ -116,10 +118,15 @@ body {
     }
 
     .prev:before { content:"<- " }
-    .prev { margin-left:0; }
+    .prev {
+      margin-left:1em;
+    }
 
     .next:after { content:" ->" }
-    .next { float:right; }
+    .next {
+      float:right;
+      margin-right:1em;
+    }
 
   }
 }
