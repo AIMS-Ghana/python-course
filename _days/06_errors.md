@@ -1,5 +1,6 @@
 ---
 title: Errors
+prep: input1
 ---
 
 ## What are Errors?
@@ -25,7 +26,3 @@ Exceptions
 how are exceptions produced, how are exceptions handled, why exceptions instead of something else?
 
 ## Task: Have invalid arguments produce exceptions
-
-## PREP FOR NEXT SESSION
-
- - read about user input, file input

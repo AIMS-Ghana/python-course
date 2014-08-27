@@ -1,5 +1,6 @@
 ---
 title: "Flow Control I: `if-else`"
+prep: errors
 ---
 
 ## Recall: Piece-wise defined Functions And Function Domains
@@ -50,7 +51,3 @@ geometric functions.  Consider the example:
 We will be talking more about the last bit, `raise ...`, in the next session.
 For now, you should `raise ValueError("message")`, with an appropriate message
 corresponding to what is wrong with the inputs.
-
-## PREP FOR NEXT SESSION
-
- - read about [errors and error handling](https://docs.python.org/2/tutorial/errors.html)

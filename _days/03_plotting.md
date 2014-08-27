@@ -1,5 +1,6 @@
 ---
 title: Plotting
+prep: testing
 ---
 
 ## How Do We Understand Results?
@@ -11,6 +12,8 @@ However, often we may understand more from several points, or indeed a
 continuous line or surface.
 
 ## Basic Turtle
+
+Python has a basic library for drawing lines called `turtle`:
 
 {% include pyblock.md target="plot_ii.py" %}
 
@@ -37,5 +40,3 @@ For the twist points:
  shapes with the same area, but different perimeters.
  - for shapes or solids that have multiple dimensions, find a way to capture
  the effects of varying both
-
-##

@@ -1,6 +1,7 @@
 ---
 title: "Variables, Functions"
-prep: testing
+prep: plotting
+math: yes
 ---
 
 ## Mathematical Variables, Parameters, Functions, Equations, *etc*
