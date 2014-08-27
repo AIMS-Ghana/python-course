@@ -3,17 +3,6 @@
 
 $background: #111111;
 $foreground: #f8f8f2;
-/** $comment: #75715E;
-$keyword: #66d9ef;
-$string: #e6db74;
-$number: #ae81ff;
-$variable: #00FF00;
-$name: #a6e22e;
-$operator: #f92672;
-$const: #663300; **/
-
-$background: #111111;
-$foreground: #f8f8f2;
 $comment: #808080;
 $keyword: #FFFF66;
 $string: #A5C261;
@@ -22,7 +11,6 @@ $variable: #00FF00;
 $name: #FF9900;
 $operator: #FFCC66;
 $const: #663300;
-
 
 pre {
   background: $background;
