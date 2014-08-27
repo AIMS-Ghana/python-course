@@ -10,4 +10,6 @@ For the next session, the preparatory reading is:
  - review some programming intros: *e.g.*, [this](http://codingintro.com/),
  [that](https://www.khanacademy.org/computing/cs/programming/intro-to-programming/v/programming-intro),
  or [another](http://en.wikiversity.org/wiki/Introduction_to_Programming)
+ - I brought two books to stay in the AIMS Ghana library, feel free to read them
+ together in small groups, but try to keep them available for many people
  - complete [github tutorial](https://try.github.io/levels/1/challenges/1)
