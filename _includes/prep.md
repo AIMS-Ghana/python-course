@@ -1,3 +1,3 @@
 ## PREP FOR NEXT SESSION
 
-{% include prep/{{ include.target }}.md %}
+{% include prep/{{ page.prep }}.md %}

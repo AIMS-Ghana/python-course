@@ -22,7 +22,7 @@
 </div>
 <div class="main">
 {{ content }}
-{% if page.prep %}{% capture pp %}{% include prep.md target=page.prep %}{% endcapture %}{{ pp | markdownify }}{% endif %}
+{% if page.prep %}{% capture pp %}{% include prep.md %}{% endcapture %}{{ pp | markdownify }}{% endif %}
 </div>
 </body>
 </html>
