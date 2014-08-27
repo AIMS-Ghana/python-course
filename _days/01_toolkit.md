@@ -22,13 +22,13 @@ Note that *brains* is plural.  The social aspect of programming is enormously en
 Like any discipline, the work can be done for ourselves; but programming is at
 heart about expressing ideas.  A fair portion of the resulting software is shared
 with others - someone else will run the program to enjoy its result - and most
-any sophisticated project requires many minds of the life of the work.
+any sophisticated project requires many minds over the life of the work.
 
 ## Python Console / Interactive Shell / REPL
 
 **WHAT DOES REPL STAND FOR?  EXPLAIN THE CONCEPT.**
 
-On a vintage macbook:
+On my vintage macbook:
 
 ~~~
 computername:python-course username$ python3  
@@ -84,7 +84,7 @@ You should create a project named `intro-python`; we will do our course work in
 this directory.
 
 Now create a new Python file (either via hotkeys ctrl-N, or by right clicking
-the project and selecting \"new...\", or by using the dropdown menus) named
+the project and selecting \"new\...\", or by using the dropdown menus) named
 `hw` (the `.py` extension will be added automatically).
 
 **WRITE CODE THAT CAUSES THE STRING `HELLO WORLD` TO APPEAR WHEN YOU RUN THE
