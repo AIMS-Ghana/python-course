@@ -7,15 +7,15 @@ prep: toolkit
 
 ## Getting Accounts Sorted
 
-1. Account at the lab machine
-2. [Github](https://github.com) - get an account, register ssh key
+1. Account at the lab machine (should be done)
+2. [Github](https://github.com) - get an account (should be done), [create and register ssh key](https://help.github.com/articles/generating-ssh-keys)
 3. optional: [StackOverflow](http://stackoverflow.com),
    [Python Forum](http://www.python-forum.org/), etc.
 
 ## Machine Setup
 
 1. [PyCharm](http://www.jetbrains.com/pycharm/) (should be installed)
-2. Configure PyCharm
+2. Configure PyCharm: showing spaces, Python version, unit test setting, documentation
 3. optional for personal machines: [SmartGit](http://www.syntevo.com/smartgit/)
 
 ## Course Overview
@@ -35,20 +35,20 @@ The second corresponds to doing that in a code-literate (programate? algorate?) 
 The third assumes the second, but also includes that your code has a development
 history and testing results.
 
-The final item, however, means that this class may feel very unfamiliar.  We
-will typically start with a short discussion of a concept.  I will then pose
-many problems related to that concept.  *You* will have to grapple with that
-concept and figure out how to solve the problems.  I will answer questions, but
-I will always ask you a few questions of my own:
+The final item, however, means that this class may feel unfamiliar.  We will
+typically start with a short discussion of a concept.  I will then pose many
+problems related to that concept.  *You* will have to grapple with that concept
+and figure out how to solve the problems.  I will answer questions, but I will
+always ask you a few questions of my own before I answer:
 
  - What have you tried?  What was the result of that?
  - What documentation or WWW resource did you consult?
- - Which of your classmates have you talked to about the issue?
+ - Which of your classmates have you asked first?
 
 If I get the same question more than once, I will refer the questioner to their
 classmates that know the answer.
 
-I know that many students are accustomed to getting a step-by-step recipe, and
+Some students are accustomed to getting a step-by-step recipe, and
 then getting feedback on applying that recipe.  In this class, you will be expected
 to find the recipe as well.  Once you are outside these walls, whether you want
 to continue in research or seek employment in industry or start your own business,
