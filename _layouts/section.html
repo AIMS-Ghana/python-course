@@ -17,11 +17,11 @@
 </head>
 <body>
 {% capture nav %}{% include nav.md %}{% endcapture %}{{ nav | markdownify }}
-<div class="prevnext">
 {% if page.collection == "days" %}
-{% include daynav.liquid %}
+  <div class="prevnext">
+  {% include daynav.liquid %}
+  </div>
 {% endif %}
-</div>
 <div class="main">
 {{ content }}
 {% if page.prep %}{% capture pp %}{% include prep.md %}{% endcapture %}{{ pp | markdownify }}{% endif %}
