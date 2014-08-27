@@ -1,0 +1,2 @@
+ - read about [errors and error handling](https://docs.python.org/2/tutorial/errors.html)
+ - read about the `assert` Python keyword
