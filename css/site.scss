@@ -59,8 +59,8 @@ $tonelight: #1A1A1A;
 
 .main {
 
-  display: inline-block;
-  max-width : 50em;
+  // display: inline-block;
+  width : auto;
   margin-left : 13em;
   padding : 1em;
   color : $tonedark;
