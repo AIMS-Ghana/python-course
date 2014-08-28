@@ -1,7 +1,7 @@
 ---
 name: A Name
 country: A Home
-gh: "A GitHib Handle (no @)"
+gh: "batsafrancis"
 ---
 
 Short professional blurb.
