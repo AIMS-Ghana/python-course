@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="{{ site.absoluteurl }}{{ site.baseurl }}/css/site.css">
+</head>
+<body>
+{% capture nav %}{% include nav.md %}{% endcapture %}{{ nav | markdownify }}
+<div class="prevnext">
+{% include studentnav.liquid %}
+</div>
+<div class="main">
+{{ content }}
+</div>
+</body>
+</html>

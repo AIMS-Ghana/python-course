@@ -1,0 +1,13 @@
+{% assign current_students = site.students | where: "status", current %}
+{% for student in current_students %}
+    {% if student.gh == page.gh %}
+        {% unless forloop.first %}
+            <a href="{{ site.absoluteurl }}{{ site.baseurl }}{{ prev.url }}" class="prev">{{ prev.fullname }}</a>
+        {% endunless %}
+        {% unless forloop.last %}
+            {% assign next = current_students[forloop.index] %}
+            <a href="{{ site.absoluteurl }}{{ site.baseurl }}{{ next.url }}" class="next">{{ next.fullname }}</a>
+        {% endunless %}
+    {% endif %}
+    {% assign prev = student %}
+{% endfor %}

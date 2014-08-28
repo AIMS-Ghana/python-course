@@ -8,7 +8,7 @@ collections:
   days:
     output: true
   students:
-    output: false
+    output: true
 defaults:
   -
     scope:
@@ -16,6 +16,18 @@ defaults:
       type: "days"
     values:
       layout: "section"
+  -
+    scope:
+      path: ""
+      type: "students"
+    values:
+      layout: "blurb"
+  -
+    scope:
+      path: "students/2014-2015"
+      type: "students"
+    values:
+      status: "current"
 exclude:
  - run.sh
  - Gemfile
