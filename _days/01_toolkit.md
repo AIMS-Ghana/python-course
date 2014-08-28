@@ -37,8 +37,8 @@ The most important command for that purpose is `man`, short for *manual*.  For e
 computername:~ username$ man ls
 ~~~
 
-will tell you how the `ls` command works in gory detail.  Checkout the following
-commands about basic directory manipulation, and there will be a quiz:
+will tell you how the `ls` command works in gory detail.  Investigate the following
+commands about basic directory manipulation, and then there will be a quiz:
 
  - `ls`
  - `cd`
@@ -62,6 +62,13 @@ check these out with `man`, and then there will be a quiz:
  - `more`
  - `less`
  - `grep`
+ - `chmod`
+
+There are numerous other command line utilities, but these will probably be your
+most-heavily used basic commands.
+
+Two critical command line utilities for this course: `python3` and `pydoc3`.  We
+will learn more about those in a bit.
 
 ## Python Console / Interactive Shell / REPL
 
@@ -152,17 +159,36 @@ which provide a drafting mechanism.
 
 As part of the course, we will use one of those tools: `git`.
 
-We will now turn the project directory you just created into a repository
-and connect it to a remote repository.
+One of the most powerful aspects of any version control system is the ability to
+share code and contribute to existing projects.  We will take a quick tour of
+that capability relative to [site for this course](https://github.com/AIMS-Ghana/python-course).
 
-**RECALLING THE STEPS FROM THE PREREADING, CONNECT A LOCAL GIT REPOSITORY
-TO A REMOTE REPOSITORY ON GITHUB.**
+With `git` and GitHub, when you want to contribute a fix or some improvement to a project
+(or just have your own copy to explore), you (1) make a fork of the project,
+(2) make the changes, and (3) make a pull request.  Typically, after you have
+submitted the changes and they have been accepted, you will discard your fork;
+if you want to make changes in the future, you can always make another one, and
+keeping your copy current with other project changes can be a mess.
+
+For the course website, you will be going through that process to add a short
+profile about yourself.  In the future, we can also add pictures.
+
+* * *
+
+We will now turn the project directory you created earlier with PyCharm into a
+repository and connect it to a remote repository.  First, create the remote
+repository on GitHub.  Then:
+
+**RECALLING THE STEPS FROM THE PREREADING, INITIALIZE THE PROJECT AS A REPOSITORY,
+ADD THE FILES, AND CONNECT TO A REMOTE REPOSITORY ON GITHUB.**
+
+You may have also noticed the PyCharm understands how to use git.  We will be
+using this capability rather than the command line version for most of the rest
+of our work.
 
 We create a repository to provide history, a means to create drafts, a way to
-share code, among other reasons.  We will demonstrate the first two with the
-next tasks.
-
-We will make a minor modification to our `hw` script, to narrow our ambitions:
+share code, among other reasons.  Now we to advantage of these.  We will make a
+minor modification to our `hw` script, to narrow our ambitions:
 
 **CHANGE YOUR SCRIPT TO SAY HELLO TO GHANA INSTEAD OF THE WHOLE WORLD.**
 

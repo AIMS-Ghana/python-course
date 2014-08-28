@@ -17,6 +17,9 @@ Python has a basic library for drawing lines called `turtle`:
 
 {% include pyblock.md target="plot_ii.py" %}
 
+You can direct turtles to move about and draw lines as they do so.  There are
+more ways to direct the turtle, so feel free to consult the detailed documentation.
+
 ## Basic Matplotlib
 
 {% include pyblock.md target="plot_i.py" %}

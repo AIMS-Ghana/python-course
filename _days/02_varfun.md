@@ -36,10 +36,10 @@ Example:
 
 Your assignment:
 
- - create a file in your local repository named `geom_formulae.py`
- - pick at least 10 other shapes or solids for geometric properties (*e.g.*,
+ - create a file in your PyCharm project / local repository named `geom_formulae.py`
+ - pick at least 10 other shapes or solids, for which you will be coding geometric formulae (*e.g.*,
    perimeter, area, volume, surface area)
- - implement those formulae as functions  and verify the results for dimensions
+ - implement those formulae as functions and verify the results for dimensions
  that you can check with pen and paper
  - challenge: who can implement the most formulae?
 

@@ -27,6 +27,7 @@ for a square:
 {% include pyblock.md target='test_square_geom.py' %}
 
 What are the notable points?
+
  - new keyword `assert`
  - function definitions start with `test_`
 
