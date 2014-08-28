@@ -3,7 +3,7 @@ title: Plotting
 prep: testing
 ---
 
-## How Do We Understand Results?
+## How Do We Understand Mathematical Results?
 
 Sometimes, we want mathematical results in terms of a single numerical
 outcome.  For example, the shape parameters or moments of a distribution.
@@ -22,10 +22,19 @@ more ways to direct the turtle, so feel free to consult the detailed documentati
 
 ## Basic Matplotlib
 
+We will also be using a mathematical plotting library `matplotlib`, which has
+capabilities appropriate to creating visualizations of scientific and
+mathematical results.
+
 {% include pyblock.md target="plot_i.py" %}
 
-aside: this is a preview of the capabilities of `numpy`.  You can just re-use
-this application (namely `vectorize` and `linspace`) for your tasks now, and
+You can basically create series of numbers (`S`, `A`, and `P` in this case), then
+plot lines using those points as the reference.  There are several ways to change
+the details of the lines (color, line type) and to annotate the plot (axis labels,
+legends).
+
+aside: this code has a preview of the capabilities of `numpy`.  You can just re-use
+this syntax (namely `vectorize` and `linspace` to make your functions able to receive vector inputs) for your tasks now, and
 we will cover `numpy` more thoroughly later.  However, if you want to read ahead,
 feel free to start with [`vectorize`](http://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html)
 and [`linspace`](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html).
@@ -35,11 +44,12 @@ and [`linspace`](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linsp
 Using the shapes for which you implemented geometric formulae, create
 functions that draw those shapes using turtles.
 
-Then, create functions which will plot curves for their properties by varying one dimension.
+Also create functions which will plot curves for their properties by varying one dimension.
 
 For the twist points:
 
- - use your shape-turtle functions (possibly with some modification) to draw several
- shapes with the same area, but different perimeters.
+ - use your shape-turtle functions (possibly with some modification) to draw a single
+ plot with several different shapes of the same area.  Vary the color of those
+ shapes according to their relative perimeters.
  - for shapes or solids that have multiple dimensions, find a way to capture
  the effects of varying both
