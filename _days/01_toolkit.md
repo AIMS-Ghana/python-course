@@ -45,6 +45,7 @@ commands about basic directory manipulation, and then there will be a quiz:
  - `mkdir`
  - `rm`
  - `rmdir`
+ - `pwd`
 
 There are a few important other filesystem symbols: `.`, `..`, and `~`.  I mentioned `~`
 in the previous session; use `cd` and `ls` to figure out what `.` and `..` mean.
@@ -63,6 +64,8 @@ check these out with `man`, and then there will be a quiz:
  - `less`
  - `grep`
  - `chmod`
+ - `mv`
+ - `cp`
 
 There are numerous other command line utilities, but these will probably be your
 most-heavily used basic commands.
