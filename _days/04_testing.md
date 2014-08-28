@@ -32,7 +32,7 @@ What are the notable points?
  - function definitions start with `test_`
 
 We can run these tests by right-clicking our project directory and selecting
-\"Run Nosetests...\".  The `nose` module does unit testing using an approach
+\"Run Nosetests\...\".  The `nose` module does unit testing using an approach
 with simpler syntax that the built-in `unittest` module.
 
 **QUERY: WHERE ELSE HAVE YOU SEEN TESTS ALREADY?**
@@ -48,6 +48,7 @@ approach.  Verify those tests work both via PyCharm and the terminal; your
 submission should include a bash script that will run all your tests.
 
 Twist points:
+
  - for each of your formulae, write tests that your method *should* handle but
  currently does not (*e.g.*, what happens when your function receives negative
- arguments).  These tests should fail.
+ arguments? or strings?).  These tests should fail.
