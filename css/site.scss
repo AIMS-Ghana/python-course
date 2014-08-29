@@ -23,9 +23,35 @@ body, html {
   #{$name}: #{$argument};
 }
 
+@mixin prefixedargs($name, $same, $argument) {
+  #{$name}: $same, -webkit-#{$argument};
+  #{$name}: $same, -ms-#{$argument};
+  #{$name}: $same, -moz-#{$argument};
+  #{$name}: $same, -o-#{$argument};
+  #{$name}: $same, #{$argument};
+}
+
+@mixin prefixedargsnocomma($name, $argument) {
+  #{$name}: -webkit-#{$argument};
+  #{$name}: -ms-#{$argument};
+  #{$name}: -moz-#{$argument};
+  #{$name}: -o-#{$argument};
+  #{$name}: #{$argument};
+}
+
+
+/* .content {
+    //position:relative;
+    top:0;
+    bottom:0;
+    width:100%;
+    overflow:hidden;
+} */
+
 .nav {
+  display: inline-block;
   width: 5em;
-  opacity: 0.1;
+  opacity: 0;
   @include prefixed(transition, width 1s, opacity 0.5s);
 
   &:hover {
@@ -71,7 +97,7 @@ body, html {
     a {
 	    text-decoration: none;
 	    color : inherit;
-	    padding : 0.2em 0.5em;
+	    padding : 0.2em 0em;
 	    display : block;
     }
 
@@ -79,18 +105,35 @@ body, html {
 
 }
 
-.main {
+$iconwid: 60px;
+$bodybdwid: 5px;
 
-  // display: inline-block;
+@function lin($split) {
+  @return linear-gradient(left, $paledark 0, $paledark $split, $tonelight $split, $tonelight 100%);
+}
+
+body {
+  padding-left: $bodybdwid;
+  padding-top: $bodybdwid;
+  @include prefixedargsnocomma(background-image, lin($iconwid + 2*$bodybdwid));
+
+}
+
+.content {
+
+  > * {
+    margin-left: 1%;
+  }
+
   width : auto;
-  // margin-left : 13em;
   padding : 1em;
   color : $tonedark;
-  background-color : $tonelight;
-  border-width: 4px;
-  border-color: $tonemid;
-  border-style: solid;
-  border-radius: 5px;
+  background : $tonelight;
+  @include prefixedargs(background-image, url({{ site.absoluteurl }}/icon.png), lin($iconwid + $bodybdwid));
+  background-repeat: no-repeat;
+
+  padding-left : 60px;
+
 
   a {
     color : inherit;
@@ -126,7 +169,6 @@ body, html {
 }
 
 body {
-  background-color : black;
   font-family: sans-serif;
   margin : 0px;
 
