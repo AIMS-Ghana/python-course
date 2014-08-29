@@ -15,7 +15,7 @@ prep: toolkit
 ## Machine Setup
 
 1. [PyCharm](http://www.jetbrains.com/pycharm/) (should be installed)
-2. Configure PyCharm: showing spaces, Python version, unit test setting, documentation
+2. Configure PyCharm: showing spaces, showing line numbers, Python version, unit test setting, documentation
 3. optional for personal machines: [SmartGit](http://www.syntevo.com/smartgit/)
 
 ## Course Overview
