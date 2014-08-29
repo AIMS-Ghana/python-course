@@ -7,3 +7,5 @@ _site/*
 icon.png
 
 logo.png
+
+.sass-cache
