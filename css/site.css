@@ -12,13 +12,15 @@ body {
   background-image: -ms-linear-gradient(left, #313157 0, #313157 3.5px, #313157 3.5px, #1A1A1A 63px);
   background-image: -moz-linear-gradient(left, #313157 0, #313157 3.5px, #313157 3.5px, #1A1A1A 63px);
   background-image: -o-linear-gradient(left, #313157 0, #313157 3.5px, #313157 3.5px, #1A1A1A 63px);
-  background-image: linear-gradient(left, #313157 0, #313157 3.5px, #313157 3.5px, #1A1A1A 63px); }
+  background-image: linear-gradient(left, #313157 0, #313157 3.5px, #313157 3.5px, #1A1A1A 63px);
+  background-attachment: fixed; }
 
 .nav {
   display: inline-block;
   width: 70px;
   opacity: 0;
   overflow-x: visible;
+  z-index: 10;
   -webkit-transition: width 1s, opacity 0.2s;
   -ms-transition: width 1s, opacity 0.2s;
   -moz-transition: width 1s, opacity 0.2s;
@@ -69,6 +71,7 @@ body {
         margin: 2.5px 0 0 0; }
 
 .content {
+  /* handles the left navigate offset */
   width: auto;
   padding: 1px 1px 1px 60px;
   color: #FFFFFF;
@@ -78,26 +81,43 @@ body {
   background-image: url(//localhost:4000/icon.png), -moz-linear-gradient(left, #313157 0, #313157 3.25px, #313157 3.25px, #1A1A1A 58.5px);
   background-image: url(//localhost:4000/icon.png), -o-linear-gradient(left, #313157 0, #313157 3.25px, #313157 3.25px, #1A1A1A 58.5px);
   background-image: url(//localhost:4000/icon.png), linear-gradient(left, #313157 0, #313157 3.25px, #313157 3.25px, #1A1A1A 58.5px);
-  background-repeat: no-repeat; }
-  .content > * {
-    margin-left: 1%; }
-  .content a {
-    color: inherit; }
-    .content a:hover {
-      background-color: #0A0A0A; }
-  .content .blurb {
-    text-align: left; }
-    .content .blurb img {
-      margin-left: 1em;
-      margin-right: 1em;
-      margin-bottom: 1em;
-      margin-top: 0em; }
-    .content .blurb:nth-of-type(even) img {
-      float: right; }
-    .content .blurb:nth-of-type(odd) img {
-      float: left; }
-  .content .blurb + hr {
-    clear: both; }
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 5px 5px; }
+
+.content:after {
+  /* places text logo in navigation region;
+     visible while nav hidden. */
+  content: "AIMS GHANA";
+  position: fixed;
+  top: 50%;
+  left: -60px;
+  font-size: 30px;
+  font-weight: bold;
+  transform: rotate(90deg);
+  background: -webkit-linear-gradient(left, red 0%, red 33%, gold 33%, gold 66%, green 66%, green 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.content > * {
+  margin-left: 1%; }
+.content a {
+  color: inherit; }
+  .content a:hover {
+    background-color: #0A0A0A; }
+.content .blurb {
+  text-align: left; }
+  .content .blurb img {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-top: 0em; }
+  .content .blurb:nth-of-type(even) img {
+    float: right; }
+  .content .blurb:nth-of-type(odd) img {
+    float: left; }
+.content .blurb + hr {
+  clear: both; }
 
 body {
   font-family: sans-serif; }

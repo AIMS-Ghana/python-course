@@ -59,6 +59,7 @@ body {
   padding-top: $bodybdwid;
   margin: 0;
   @include prefixedargsnocomma(background-image, lin_decay($split:$fadep*($iconwid + 2*$bodybdwid), $end:$endp*($iconwid + 2*$bodybdwid)));
+  background-attachment: fixed;
 }
 
 $logowid: 143px + $bodybdwid;
@@ -68,6 +69,7 @@ $logowid: 143px + $bodybdwid;
   width: $iconwid + 2*$bodybdwid;
   opacity: 0;
   overflow-x: visible;
+  z-index: 10;
 
   @include prefixed(transition, width 1s, opacity 0.2s);
 
@@ -122,18 +124,38 @@ $logowid: 143px + $bodybdwid;
 }
 
 .content {
-
-  > * {
-    margin-left: 1%;
-  }
-
+  /* handles the left navigate offset */
   width : auto;
   padding : 1px 1px 1px 60px;
   color : $tonedark;
   background : $tonelight;
   @include prefixedargs(background-image, url(#{$siteabsurl}/icon.png), lin_decay( $split:$fadep*($iconwid + $bodybdwid), $end:$endp*($iconwid + $bodybdwid)));
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: $bodybdwid $bodybdwid;
 
+}
+
+.content:after {
+  /* places text logo in navigation region;
+     visible while nav hidden. */
+  content: "AIMS GHANA";
+  position: fixed;
+  top: 50%;
+  left: -$iconwid;
+  font-size: $iconwid/2;
+  font-weight: bold;
+  transform: rotate(90deg);
+  background: -webkit-linear-gradient(left, red 0%, red 33%, gold 33%, gold 66%, green 66%, green 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content {
+
+  > * {
+    margin-left: 1%;
+  }
 
   a {
     color : inherit;
