@@ -23,7 +23,7 @@
   {% include daynav.liquid %}
   </div>
 {% endif %}
-<div class="main">
+<div class="content">
 {{ content }}
 {% if page.prep %}{% capture pp %}{% include prep.md %}{% endcapture %}{{ pp | markdownify }}{% endif %}
 </div>
