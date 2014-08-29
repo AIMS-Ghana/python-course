@@ -1,5 +1,8 @@
----
----
+//---
+//---
+
+$siteabsurl: "//localhost:4000";
+/* {{ site.absoluteurl }} */
 
 $dark: #191970;
 $light: #FFF44F;
@@ -128,7 +131,7 @@ $logowid: 143px + $bodybdwid;
   padding : 1px 1px 1px 60px;
   color : $tonedark;
   background : $tonelight;
-  @include prefixedargs(background-image, url({{ site.absoluteurl }}/icon.png), lin_decay( $split:$fadep*($iconwid + $bodybdwid), $end:$endp*($iconwid + $bodybdwid)));
+  @include prefixedargs(background-image, url(#{$siteabsurl}/icon.png), lin_decay( $split:$fadep*($iconwid + $bodybdwid), $end:$endp*($iconwid + $bodybdwid)));
   background-repeat: no-repeat;
 
 
