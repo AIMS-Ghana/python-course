@@ -10,10 +10,7 @@ $tonedark: #FFFFFF;
 $tonemid: #0A0A0A;
 $tonelight: #1A1A1A;
 
-body, html {
-  margin:0;
-  padding:0;
-}
+html { margin:0; padding:0; }
 
 @mixin prefixed($name, $argument...) {
   -webkit-#{$name}: #{$argument};
@@ -39,23 +36,41 @@ body, html {
   #{$name}: #{$argument};
 }
 
+$iconwid: 60px;
+$bodybdwid: 5px;
 
-/* .content {
-    //position:relative;
-    top:0;
-    bottom:0;
-    width:100%;
-    overflow:hidden;
-} */
+@function lin_split($split, $leftcol:$paledark, $rightcol:$tonelight) {
+  @return linear-gradient(left, $leftcol 0, $leftcol $split, $rightcol $split, $rightcol 100%);
+}
+
+@function lin_decay($split, $leftcol:$paledark, $rightcol:$tonelight, $end:100%) {
+  @return linear-gradient(left, $leftcol 0, $leftcol $split, $leftcol $split, $rightcol $end);
+}
+
+$fadep:0.05;
+$endp:0.9;
+
+/* establish body box */
+body {
+  padding-left: $bodybdwid;
+  padding-top: $bodybdwid;
+  margin: 0;
+  @include prefixedargsnocomma(background-image, lin_decay($split:$fadep*($iconwid + 2*$bodybdwid), $end:$endp*($iconwid + 2*$bodybdwid)));
+}
+
+$logowid: 143px + $bodybdwid;
 
 .nav {
   display: inline-block;
-  width: 5em;
+  width: $iconwid + 2*$bodybdwid;
   opacity: 0;
-  @include prefixed(transition, width 1s, opacity 0.5s);
+  overflow-x: visible;
+
+  @include prefixed(transition, width 1s, opacity 0.2s);
 
   &:hover {
     width: auto;
+    padding-right: 3em;
     opacity: 1;
     @include prefixed(transition-delay, 0.5s);
   }
@@ -63,26 +78,20 @@ body, html {
   text-align: left;
   padding : 0em;
   margin : 0em;
-  // margin-right: 1em;
   font-size: 1em;
   position: fixed;
-  top: 1px;
+  top: 0px;
+  left: 0px;
   list-style-type: none;
-  background-color: $paledark;
-  border-bottom-right-radius: 5px;
+  @include prefixedargsnocomma(background-image, lin_decay($split:$logowid, $rightcol:transparent));
   height: 100vh;
   overflow-y: auto;
 
-  /* &:hover {
-    display: initial;
-  } */
-
   li {
-
     margin : 0em;
     color: $palelight;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 0 $bodybdwid*2 $bodybdwid*2 0;
+    padding-left: $bodybdwid;
 
     &:hover {
       background-color: $light;
@@ -97,25 +106,14 @@ body, html {
     a {
 	    text-decoration: none;
 	    color : inherit;
-	    padding : 0.2em 0em;
+	    padding : $bodybdwid/2 0;
 	    display : block;
+      img {
+        margin: $bodybdwid/2 0 0 0;
+      }
     }
 
   }
-
-}
-
-$iconwid: 60px;
-$bodybdwid: 5px;
-
-@function lin($split) {
-  @return linear-gradient(left, $paledark 0, $paledark $split, $tonelight $split, $tonelight 100%);
-}
-
-body {
-  padding-left: $bodybdwid;
-  padding-top: $bodybdwid;
-  @include prefixedargsnocomma(background-image, lin($iconwid + 2*$bodybdwid));
 
 }
 
@@ -126,20 +124,16 @@ body {
   }
 
   width : auto;
-  padding : 1em;
+  padding : 1px 1px 1px 60px;
   color : $tonedark;
   background : $tonelight;
-  @include prefixedargs(background-image, url({{ site.absoluteurl }}/icon.png), lin($iconwid + $bodybdwid));
+  @include prefixedargs(background-image, url({{ site.absoluteurl }}/icon.png), lin_decay( $split:$fadep*($iconwid + $bodybdwid), $end:$endp*($iconwid + $bodybdwid)));
   background-repeat: no-repeat;
-
-  padding-left : 60px;
 
 
   a {
     color : inherit;
-    &:hover {
-      background-color: $tonemid;
-    }
+    &:hover { background-color: $tonemid; }
   }
 
   .blurb {
@@ -170,7 +164,6 @@ body {
 
 body {
   font-family: sans-serif;
-  margin : 0px;
 
   .prevnext {
     position: fixed;
