@@ -88,6 +88,7 @@ $logowid: 143px + $bodybdwid;
   overflow-y: auto;
 
   li {
+    white-space: nowrap;
     margin : 0em;
     color: $palelight;
     border-radius: 0 $bodybdwid*2 $bodybdwid*2 0;
