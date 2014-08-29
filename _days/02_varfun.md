@@ -65,3 +65,8 @@ adding an issue to their repository with any comments)
 Future assignments will be evaluated similarly: a few points for the absolute
 minimum, a point for checking classmates work, more points for following good
 coding practices, and then a point or two for a twist.
+
+Several future assignments also build off this one.  If you find this work easy
+to complete, you should first make sure your classmates also get this assignment,
+but then feel free to proceed to adding plots and validation to your formulae
+(the next two assignments).
