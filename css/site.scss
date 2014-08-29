@@ -10,7 +10,29 @@ $tonedark: #FFFFFF;
 $tonemid: #0A0A0A;
 $tonelight: #1A1A1A;
 
+body, html {
+  margin:0;
+  padding:0;
+}
+
+@mixin prefixed($name, $argument...) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
 .nav {
+  width: 5em;
+  opacity: 0.1;
+  @include prefixed(transition, width 1s, opacity 0.5s);
+
+  &:hover {
+    width: auto;
+    opacity: 1;
+    @include prefixed(transition-delay, 0.5s);
+  }
 
   text-align: left;
   padding : 0em;
@@ -22,7 +44,7 @@ $tonelight: #1A1A1A;
   list-style-type: none;
   background-color: $paledark;
   border-bottom-right-radius: 5px;
-  height: 100%;
+  height: 100vh;
   overflow-y: auto;
 
   /* &:hover {
@@ -61,7 +83,7 @@ $tonelight: #1A1A1A;
 
   // display: inline-block;
   width : auto;
-  margin-left : 13em;
+  // margin-left : 13em;
   padding : 1em;
   color : $tonedark;
   background-color : $tonelight;
