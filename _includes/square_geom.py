@@ -1,23 +1,23 @@
-def square_perimeter(side):
+from numbers import Number
+
+def square_perimeter(side : Number) -> Number:
     """
-    'square_perimeter' calculates a square's perimeter given a side length:
+    Calculate perimeter of a square from side length.
+    @param side: the side length
+    @return: the perimeter (same units as side length)
     >>> square_perimeter(4)
     16
-
-    :param side: the side length
-    :return: the perimeter (same units as side length)
     """
     return 4*side
 
 
 def square_area(side):
     """
-    'square_area' calculates a square's area given a side length:
-    >>> square_area(4)
-    16
-
+    Calculate area of a square from side length.
     :param side: the side length
     :return: the area (units^2 from side)
+    >>> square_area(4)
+    16
     """
     return side*side
 
