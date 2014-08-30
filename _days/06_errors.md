@@ -21,7 +21,15 @@ FROM THE ONES THAT WERE NOT?**
 
 ## Errors in Programs
 
-Exceptions
+By now, you have seen some errors in your programs.  On some occasions, the
+dreaded red text in the console.  But you have probably also seen cases where
+Python did not complain, yet the results were still wrong. Those of you that
+tackled some of the more challenging aspects of the earlier assignments, for
+example using default arguments to allow the same geometric calculate to be
+accomplished several ways, probably found some cases where you *wanted* your
+program to have an error.
+
+Python, like many other languages, deals with errors via *Exceptions*.
 
 how are exceptions produced, how are exceptions handled, why exceptions instead of something else?
 
