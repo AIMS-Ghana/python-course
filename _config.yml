@@ -1,6 +1,6 @@
 absoluteurl: http://AIMS-Ghana.github.io
 baseurl: '/python-course'
-repourl: 'https://github.com/AIMS-Ghana/python-course/tree/gh-pages/_includes'
+repourl: 'https://raw.githubusercontent.com/AIMS-Ghana/python-course/gh-pages/_includes/'
 markdown: kramdown
 css:
   active: "active"
