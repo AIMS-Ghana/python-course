@@ -64,6 +64,9 @@ body {
 $logowid: 143px + $bodybdwid;
 
 .nav {
+  /* creates a left-navigation bar that hides when
+     not hovering, sticks in position, and scrolls
+     when the nav elements are too many */
   display: inline-block;
   width: $iconwid + 2*$bodybdwid;
   opacity: 0;
@@ -97,6 +100,7 @@ $logowid: 143px + $bodybdwid;
     color: $palelight;
     border-radius: 0 $bodybdwid*2 $bodybdwid*2 0;
     padding-left: $bodybdwid;
+    padding-right: 1em;
 
     &:hover {
       background-color: $light;
@@ -145,11 +149,11 @@ $logowid: 143px + $bodybdwid;
   content: "AIMS GHANA";
   position: fixed;
   top: 50%;
-  left: -$iconwid;
-  font-size: $iconwid/2;
+  left: -1.5*$iconwid;
+  font-size: 2*$iconwid/3;
   font-weight: bold;
   transform: rotate(90deg);
-  background: -webkit-linear-gradient(left, red 0%, red 33%, gold 33%, gold 66%, green 66%, green 100%);
+  background: -webkit-linear-gradient(left, red 0%, red 33.3%, gold 33.3%, gold 66.6%, green 66.6%, green 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
