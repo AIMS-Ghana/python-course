@@ -1,8 +1,7 @@
-//---
-//---
+---
+---
 
-$siteabsurl: "//localhost:4000";
-/* {{ site.absoluteurl }} */
+$siteabsurl: "{{ site.absoluteurl }}";
 
 $dark: #191970;
 $light: #FFF44F;
@@ -117,6 +116,10 @@ $logowid: 143px + $bodybdwid;
       img {
         margin: $bodybdwid/2 0 0 0;
       }
+    }
+
+    select, input {
+      font-size: inherit;
     }
 
   }
