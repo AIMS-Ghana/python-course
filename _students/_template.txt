@@ -1,8 +1,9 @@
 ---
-name: The Name You Go By
-fullname: Your Full Name
+name: Your Full Name, the name you go by first
 country: Your Home
 gh: "Your GitHib Handle (no @)"
 ---
 
-Short professional blurb.
+Overwrite this with whatever content you want on your page.  A short professional blurb,
+some resume-like info, *etc* are good options.  Keep in mind this is publically
+published on the internet.
