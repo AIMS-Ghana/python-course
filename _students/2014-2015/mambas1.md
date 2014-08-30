@@ -4,4 +4,4 @@ country: Swaziland
 gh: "mambas1"
 ---
 
-Short professional blurb.
+I did not edit the short professional blurb.

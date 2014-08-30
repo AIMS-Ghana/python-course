@@ -22,12 +22,13 @@ defaults:
       type: "students"
     values:
       layout: "blurb"
+      status: "past"
   -
     scope:
       path: "students/2014-2015"
       type: "students"
     values:
-      status: "current"
+      status: current
 exclude:
  - run.sh
  - Gemfile
