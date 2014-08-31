@@ -6,3 +6,4 @@
 <option>A</option>
 <option>B</option>
 </select><input type="button" value="ROLL" />
+ - [![Build Status](https://travis-ci.org/AIMS-Ghana/python-course.svg)](https://travis-ci.org/AIMS-Ghana/python-course)
