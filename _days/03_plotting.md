@@ -56,3 +56,33 @@ For the twist points:
  the effects of varying both
  - for each of the shapes and solids, plot the trends for two properties (*e.g.*, area
    and perimeter, volume and surface area)
+
+## Task II: Provide Student Info For Course Site
+
+Some people had trouble with this pseudo-task last week.  To review:
+
+ - fork the course repository
+ - **add** a file in the `_students/2014-2015` directory that is `YOURGITHUBUSER.md`
+ - put in that file the information present in the `_students/_template.txt` file.
+ - do *not* rename or replace that file
+ - **NEW**, you should add a picture of yourself to the repository in the `students`
+ directory.  The easiest way to do this will be to pull the repository to your
+ machine, add the picture, commit, and push the results.  You may find this approach
+ easier for the earlier steps as well, though they can be completed on the GitHub
+ site
+
+For convenience, the template file is:
+
+~~~ yaml
+---
+name: Your Full Name, the name you go by first
+country: Your Home
+gh: "Your GitHib Handle (no @)"
+---
+
+Overwrite this with whatever content you want on your page.  A short professional blurb,
+some resume-like info, *etc* are good options.  Keep in mind this is publicly
+published on the internet.
+
+This region *may* contain [kramdown](http://kramdown.gettalong.org/syntax.html) formated content.
+~~~

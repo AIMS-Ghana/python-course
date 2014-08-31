@@ -5,5 +5,7 @@ gh: "Your GitHib Handle (no @)"
 ---
 
 Overwrite this with whatever content you want on your page.  A short professional blurb,
-some resume-like info, *etc* are good options.  Keep in mind this is publically
+some resume-like info, *etc* are good options.  Keep in mind this is publicly
 published on the internet.
+
+This region *may* contain [kramdown](http://kramdown.gettalong.org/syntax.html) formated content.
