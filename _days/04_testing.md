@@ -51,4 +51,10 @@ Twist points:
 
  - for each of your formulae, write tests that your method *should* handle but
  currently does not (*e.g.*, what happens when your function receives negative
- arguments? or strings?).  These tests should fail.
+ arguments? or strings?).  These tests should fail.  We will address resolving
+ these tests in the next session.
+ - for your solids, write test(s) for functions (that you have yet to write) that
+ would verify if a point `(x, y, z)` was on the surface of the solid.
+ - express your tests of shapes and solids in terms of other shapes or
+ solids.  For example, you can express the result for the volume of a solid angle
+ in terms of a percent of the volume of a sphere with the same radius.

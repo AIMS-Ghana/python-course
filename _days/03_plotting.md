@@ -42,7 +42,8 @@ and [`linspace`](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linsp
 ## Task: Draw Geometric Figures, Plot Properties
 
 Using the shapes for which you implemented geometric formulae, create
-functions that draw those shapes using turtles.
+functions that draw those shapes using turtles.  We will be adding plotting for
+solids later, but if you wish to start now, [start here](http://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html).
 
 Also create functions which will plot curves for their properties by varying one dimension.
 
@@ -53,3 +54,5 @@ For the twist points:
  shapes according to their relative perimeters.
  - for shapes or solids that have multiple dimensions, find a way to capture
  the effects of varying both
+ - for each of the shapes and solids, plot the trends for two properties (*e.g.*, area
+   and perimeter, volume and surface area)

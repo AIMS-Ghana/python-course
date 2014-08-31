@@ -1,5 +1,6 @@
 ---
 title: Objects
+prep: lists
 ---
 
 ## Numbers *vs*. ?
@@ -19,8 +20,3 @@ then being able to reason about the behaviors of those things.
 ## Objects
 
 ## Task: Convert Your Shape Work Into Objects
-
-## PREP READING
-
- - review Python built-in object types, particularly list
- (*e.g.*, [here](https://docs.python.org/3.4/library/stdtypes.html))
