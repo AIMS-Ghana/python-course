@@ -51,15 +51,3 @@ geometric functions.  Consider the example:
 We will be talking more about the last bit, `raise ...`, in a later session.
 For now, you should `raise ValueError("message")`, with an appropriate message
 corresponding to what is wrong with the inputs.
-
-## Task II: Project Euler
-
-We will now also start on the [ProjectEuler.net](http://projecteuler.net/problems)
-problems.  You will need to make an account, locate your friend key, and provide
-that to me and the tutors via email.  By next Monday, solve at least 10 problems.
-We will cover all the necessary syntax tools this week, but you will want to start
-thinking about the algorithm to solve some of these problems prior to that.
-
-WARNING: DO *NOT* PUT ANY CODE YOU USED TO SOLVE PROJECT EULER PROBLEMS IN YOUR
-REPOSITORY.  WHEN SOLVING THE PROJECT EULER PROBLEMS, DO *NOT* SIMPLY SEARCH FOR
-SOLUTIONS.

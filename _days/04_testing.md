@@ -58,3 +58,16 @@ Twist points:
  - express your tests of shapes and solids in terms of other shapes or
  solids.  For example, you can express the result for the volume of a solid angle
  in terms of a percent of the volume of a sphere with the same radius.
+
+## Task II: Project Euler
+
+We will now also start on the
+[ProjectEuler.net](http://projecteuler.net/problems) problems.  You will need to
+make an account, locate your friend key, and provide that to me and the tutors
+via email.  By next Monday, solve at least 10 problems. We will cover all the
+necessary syntax tools this week, but you will want to start thinking about the
+algorithm to solve some of these problems prior to that.
+
+WARNING: DO *NOT* PUT ANY CODE YOU USED TO SOLVE PROJECT EULER PROBLEMS IN YOUR
+REPOSITORY.  WHEN SOLVING THE PROJECT EULER PROBLEMS, DO *NOT* SIMPLY SEARCH FOR
+SOLUTIONS.
