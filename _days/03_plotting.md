@@ -19,6 +19,9 @@ Python has a basic library for drawing lines called `turtle`:
 
 You can direct turtles to move about and draw lines as they do so.  There are
 more ways to direct the turtle, so feel free to consult the detailed documentation.
+We will cover the `while` syntax in a later session, and it is not necessary to
+use to complete this assignment, but if you would like to research ahead and use
+it, you should.
 
 ## Basic Matplotlib
 
