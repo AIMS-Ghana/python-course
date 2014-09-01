@@ -51,3 +51,6 @@ geometric functions.  Consider the example:
 We will be talking more about the last bit, `raise ...`, in a later session.
 For now, you should `raise ValueError("message")`, with an appropriate message
 corresponding to what is wrong with the inputs.
+
+In addition to this input validation, include or update your tests to verify that
+your validation restrictions are working.
