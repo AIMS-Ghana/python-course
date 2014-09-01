@@ -15,6 +15,9 @@
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
 {% endif %}
+  <script type="text/javascript"
+    src="{{ site.absoluteurl }}{{ site.baseurl }}/js/site.js">
+    </script>
 </head>
 <body>
 {% capture nav %}{% include nav.md %}{% endcapture %}{{ nav | markdownify }}
