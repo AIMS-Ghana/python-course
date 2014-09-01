@@ -30,6 +30,7 @@ What are the notable points?
 
  - new keyword `assert`
  - function definitions start with `test_`
+ - have tests to show that a particular error results via `@raises`
 
 We can run these tests by right-clicking our project directory and selecting
 \"Run Nosetests\...\".  The `nose` module does unit testing using an approach
