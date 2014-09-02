@@ -50,7 +50,7 @@ code {
   }
 
 
-  .k, .kc, .kd, .kt, .kp {
+  .k, .kc, .kd, .kt, .kp, .kn {
 /* Keyword,
    Keyword.Constant
    Keyword.Declaration,
@@ -58,7 +58,7 @@ code {
    Keyword.Pseudo */
     color: $keyword
   }
-  .kn { color: #f92672 /* Keyword.Namespace */ }
+
   .kr { color: #6600CC /* Keyword.Reserved */ }
 
   .err { color: #960050; background-color: #1e0010 /* Error */ }
@@ -112,24 +112,24 @@ code {
     color: $variable
   }
 
-  .na, .nc, .nd, .ne, .nf, .nx {
+  .na, .nc, .nd, .ne, .nf, .nx, .nn {
     color: $name
   /* Name.Attribute,
      Name.Class,
      Name.Decorator,
      Name.Exception,
      Name.Function,
-     Name.Other */
+     Name.Other,
+     Name.Namespace */
   }
 
   .nb { color: #FF66FF /* Name.Builtin */ }
   .bp { color: #3030FF /* Name.Builtin.Pseudo */ }
 
-  .no, .ni, .nn {
+  .no, .ni {
     color: $const
   /* Name.Constant,
-     Name.Entity,
-     Name.Namespace */
+     Name.Entity */
   }
 
 }
