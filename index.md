@@ -45,3 +45,5 @@ scientific reproducibility:
  - Coursera Courses (starting shortly after this one):
    * [for interactive applications](https://www.coursera.org/course/interactivepython)
    * [for basic programming](https://www.coursera.org/course/pythonlearn)
+ - online books:
+   * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
