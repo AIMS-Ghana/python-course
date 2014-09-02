@@ -1,5 +1,5 @@
 ---
-title: "Flow Control II: `for`, `while`"
+title: "Flow Control: `for`, `while`"
 prep: objects
 math: yes
 ---
