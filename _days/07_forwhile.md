@@ -4,15 +4,26 @@ prep: objects
 math: yes
 ---
 
-## Recall: Matrix Calculations, $\sum$ and $\prod$ Operators
-
 ## Sequential Iteration with `for` loops
 
-## Accumulation with `for` loops
+A `for` block iterates over the items in a collection, and executes for each of
+those items.  Here are several examples:
 
-## Recall: Numerical Root Finding Methods
+{% include pyblock.md target="for_i.py" %}
+
+What does the last iteration correspond to?
 
 ## Searching Iteration with `while`
+
+A `while` block loops as long as a condition is met.  It can simulate a `for` loop:
+
+{% include pyblock.md target="for_ii.py" %}
+
+but more generally it is used for checking a more complicated conditional.  If
+we wanted to calculate the Fibonacci sequence to a fixed approximation of $\phi$
+rather than for a fixed number of steps:
+
+{% include pyblock.md target="while_i.py" %}
 
 ## Task: Implement the Secant Method
 
@@ -32,19 +43,20 @@ course the Newton-Rhapson Method.
  - have the program determine which approach to use based on the input to the same
  function
 
-Your results will be evaluated based on an `func(x: Number)` we supply to your code.
+Your results will be evaluated based on a function `(x: Number) -> Number` we supply to your code.
 
 ## Task: Implement the Midpoint, Trapezoid, and Simpson\'s Methods
 
 Basic requirement: provide methods that receive
 
- - a function,
+ - a function (again, `(x: Number) -> Number`),
  - start and end points,
  - and a resolution,
 
 and using those applies the appropriate integration method.
 
-Remember: input validation!
+Remember: input validation!  Also, recall the `np.linspace` method we borrowed from
+`numpy` earlier.
 
 Twist points:
 
