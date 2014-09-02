@@ -53,7 +53,7 @@ Also create functions which will plot curves for their properties by varying one
 For the twist points:
 
  - use your shape-turtle functions (possibly with some modification) to draw a single
- plot with several different shapes of the same area.  Vary the color of those
+ scene with several different shapes of the same area.  Vary the color of those
  shapes according to their relative perimeters.
  - for shapes or solids that have multiple dimensions, find a way to capture
  the effects of varying both
