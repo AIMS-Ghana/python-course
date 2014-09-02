@@ -1,5 +1,5 @@
 ---
-title: "Flow Control I: `if-else`"
+title: "Flow Control: `if-else`"
 prep: errors
 ---
 
@@ -43,14 +43,24 @@ That code checks if the argument is a `Number`, and if so, is it greater than ze
 
 ## Task: Add Validation to Your Geometric Formulae
 
-Using code like that in `dimension_validate.py`, add input validation to your
-geometric functions.  Consider the example:
+Add input validation to your `geom_formulae.py`.  Here is an **INCOMPLETE** example:
 
 {% include pyblock.md target='square_geom_with_validation.py' %}
 
-We will be talking more about the last bit, `raise ...`, in a later session.
-For now, you should `raise ValueError("message")`, with an appropriate message
-corresponding to what is wrong with the inputs.
+Your code should validate in the following way:
+
+ - if the arguments are anything other than a number, you should raise a `TypeError`
+ - if the arguments are invalid because one or more are negative, you should raise a `ValueError`
+ indicating which ones
+ - if the arguments are invalid because they are incomplete, you should raise an `AttributeError`
+ suggesting which additional arguments should be provided
+ - if the arguments are invalid for other numerical reasons (*e.g.*, the three sides provided
+ to a triangle-related method cannot form a triangle), then you should raise a `ValueError`
+ explaining the problem.
+
+Several people have code that already does some of this logic, but instead returns string
+error messages.  Those people should replace their `return "error message"` with
+the appropriate `raise XYZError("error message")`
 
 In addition to this input validation, include or update your tests to verify that
 your validation restrictions are working.
