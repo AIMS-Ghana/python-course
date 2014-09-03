@@ -3,13 +3,13 @@ __author__ = 'cap10'
 from math import sin, pi
 
 def secant_method(f:callable,
-                  start:(int,float), end:(int,float),
+                  guess0:(int,float), guess1:(int,float),
                   err : float) -> float:
     # assorted input validation
-    x0, x1 = start, end
+    x0, x1 = guess0, guess1
     condition = True # needs to be the actual condition of concern
-    while condition: # TODO adapt if fx1-fx0 == 0
-        pass # update x1, x2, condition
+    while condition:
+        pass # update x0, x1, condition
     return x1
 
 def midpoint_method(f:callable,
