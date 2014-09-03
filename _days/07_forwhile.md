@@ -65,8 +65,8 @@ Twist points:
  - provide a method that will plot the integral for a particular function and endpoints
  as a function of the resolution.
 
- ## Starting Script
+## Starting Script
 
- This script skeleton may be a useful starting point:
+This script skeleton may be a useful starting point:
 
- {% include pyblock.md target="skeleton_methods.py" %}
+{% include pyblock.md target="skeleton_methods.py" %}
