@@ -10,6 +10,8 @@ print(tot)
 for s in ["some", "different", "words"]:
     print(s)
 
+print(s)
+
 first, last = 0, 1
 print(last)
 
