@@ -22,7 +22,9 @@ class Shape(object):
         self.shapes_created += 1
 
     def __str__(self):
-        return self.__class__.__name__ + "; area : "+str(self.area)+"; perimeter: "+str(self.perimeter)
+        return self.__class__.__name__ +\
+               "; area : "+str(self.area)+\
+               "; perimeter: "+str(self.perimeter)
 
 
 class Square(Shape):
@@ -36,7 +38,8 @@ class Square(Shape):
         self.perimeter = self.side_length*4
 
     def __str__(self):
-        return super(Square, self).__str__()+"; side length: "+str(self.side_length)
+        return super(Square, self).__str__()+\
+               "; side length: "+str(self.side_length)
 
     def __cmp__(self, other):
         if not isinstance(other, Square):
