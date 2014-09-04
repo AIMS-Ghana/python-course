@@ -107,8 +107,8 @@ Your script should receive three arguments:
 If the script receives erroneous arguments, it should respond with the results
 of `-h`.
 
-I recommend you review this [built in module](https://docs.python.org/3/library/argparse.html#module-argparse) for
-that part of the task.
+I recommend you review this [built in module](https://docs.python.org/dev/library/argparse.html) for
+that part of the task.  You may want to ease into it with the [tutorial](https://docs.python.org/dev/howto/argparse.html#id1).
 
 ### Interactive Mode:
 
