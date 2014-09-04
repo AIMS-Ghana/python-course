@@ -27,5 +27,8 @@ class Square(object):
         turtle.done()
 
 sq = Square(50)
-print(sq,sq.area(),sq.perimeter())
+
+import math
+print(math.sin)
+print(sq,sq.area,sq.perimeter)
 sq.draw()

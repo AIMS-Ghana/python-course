@@ -25,7 +25,7 @@ def midpoint_method(f:callable,
 # same for trapezoid, simpson's methods
 
 def test_secant_method():
-    err = 1-6
+    err = 1e-6
     assert pi-err < secant_method(sin, pi/2, 3*pi/2, err) < pi+err
 
 def test_midpoint_method():
