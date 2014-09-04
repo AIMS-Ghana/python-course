@@ -8,15 +8,17 @@ class Square(object):
     def __init__(self, side_length:(int,float)):
         self.squares_created += 1
         self.side_length = side_length
+        self.area = self.side_length**2
+        self.perimeter = self.side_length*4
 
     def __str__(self):
         return "Square, side length: "+str(self.side_length)
 
-    def area(self):
-        return self.side_length**2
-
-    def perimeter(self):
-        return self.side_length*4
+    def __cmp__(self, other):
+        if not isinstance(other, Square):
+            raise TypeError
+        else:
+            return self.side_length - other.side_length
 
     def draw(self):
         for i in range(0,4):

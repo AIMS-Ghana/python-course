@@ -29,4 +29,16 @@ at least what the are, if perhaps not as a programming concept.
 
 But what are those things associated with `turtle` plotting?  They are custom objects.
 
+Revisiting our previous example shape:
+
+{% include pyblock.md target="obj_square_i.py" %}
+
+Here we have gathered the properties of a particular square in one place and
+provided a uniform way to ask about them, and also to draw this particular
+square.
+
+However, we can do even more:
+
+{% include pyblock.md target="obj_square_ii.py" %}
+
 ## Task: Convert Your Shape Work Into Objects
