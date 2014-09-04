@@ -3,7 +3,7 @@ __author__ = 'cap10'
 something = input("enter something:")
 while something != "stop":
     print(something)
-    something = input("enter something:")
+    something = input("enter something, 'stop' to stop:")
 
 anumber = None
 

@@ -3,6 +3,43 @@ title: "Input: Interactive and Files"
 prep: lists
 ---
 
+## Command Line Input
+
+Recall how we use python scripts from the console:
+
+~~~
+$ python3 somescript.py [...optional arguments]
+~~~
+
+Inside the script, we can access these optional arguments in a special way:
+
+{% include pyblock.md target="input_cl.py" %}
+
+(note: when running with PyCharm, I had to edit the run configuration to pass
+arguments.  This is the input field below the script name)
+
+Note a few points:
+
+ - the script call itself is the first argument
+ - the rest of the arguments are string values, even though we provided some numbers
+
+When we just need to provide a series of arguments in a fixed format, this approach
+will do nicely.  However, if we want to use our Python script more like a command line
+utility like `ls`, we should be able to support a more complicated syntax:
+
+~~~
+$ somecommand -xvf --target="thing" 1 2 3
+~~~
+
+Writing a parser for this is *quite* fiddly.  Fortunately, there is a built in
+module for addressing this problem, `argparse`:
+
+{% include pyblock.md target="input_cl2.py" %}
+
+Still complex, but not nearly as complex as writing it yourself.  And `argparse`
+automatically handles providing a useful help option and will complain sensibly when offered
+incorrect arguments.
+
 ## User Input
 
 Often, we want to interact with a program, like for example the Python REPL.  Here
@@ -15,17 +52,50 @@ as what is submitted is always a string in this version.
 
 ## File Input
 
+The other typical input case is that we have a file of data which we want to use
+rather than directly coding which particular values we want to evaluate with
+our programs.
+
+{% include pyblock.md target="input_file.py" %}
+
 ## Task: Input!
 
-Write a Python script that is intended to run from the command line, ala:
+We are going to combine all three of these methods into a single program. You
+will write a Python script that is intended to run from the command line:
 
 ~~~
-$ python3 yourscript.py [...optional arguments]
+$ python3 shaper.py [-(h|f|i)]
 ~~~
 
 This script will provide a user geometric properties in response to their input
 about what shapes they want the properties for, and the dimensions of those
-shapes.
+shapes.  That input can either be interactive or from a file.
+
+* * *
+
+This is a fairly complex program, so you should proceed with small steps
+verifying the pieces as you go along.  You should also implement the program from easiest
+part to hardest, which in this case is probably a bit *backwards* relative to what will
+actually happen in the program.
+
+ - first, finish your classes for the shapes.
+ - then, for a particular shape, figure out how to turn an array of string inputs
+ (*e.g.*, `['3.7', '1.5', '6', ...]`) into one of those objects.
+ - then, figure out to use a similar array (*e.g.*, `['circle', '1.5']`), to pick
+ the correct shape **and** create it.
+ - make sure that your program can handle junk inputs via `try-except`, since you
+ will need to notify users of errors *without* crashing out of the program
+ - next, re-arrange the user input and file input examples to get those input
+ arrays via the interfaces described below; you will probably want to make a test csv,
+ which can be done with any text editor
+ - almost finally, write the connections between these parts
+ - and finally, write the code that handles launching the script
+
+Both parts of this whole task are asking for the same kind of thing, just with a
+different input mode.  Try to separate the input and evaluation parts of the
+program (as described above), so that you can re-use the evaluation part.
+
+### Command Line Mode:
 
 Your script should receive three arguments:
 
@@ -71,11 +141,10 @@ right-cylinder 5 10
 and for each line, read in the requested shape and dimensions, and respond with
 the shape, its dimensions, and its geometric properties (this should be exactly
 the `__str__` method results for the corresponding `Shape` class you wrote).
-If the input line is invalid, instead of line about a shape, the script should
+If the input line is invalid, instead of a line about a shape, the script should
 print a line explaining the error with that line of input.
 
-### Advice:
+### Twist: Output!
 
-Both parts of this task are asking for the same kind of thing, just with a
-different input mode.  Try to separate the input and evaluation parts of the
-program, so that you can re-use the evaluation part.
+Add an `-o` option to be used with `-f` that specifies the output file.  Instead
+of printing the output results, write them as lines in the output file.
