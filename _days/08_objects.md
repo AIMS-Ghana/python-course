@@ -41,4 +41,22 @@ However, we can do even more:
 
 {% include pyblock.md target="obj_square_ii.py" %}
 
-## Task: Convert Your Shape Work Into Objects
+Here, we have create `Square` as a subclass of `Shape` and deferred certain
+aspects to `Shape`, like input validation and building up the string representation.
+If also make, say, a `Triangle` class from `Shape`, then the same input validation
+will come along for free.
+
+## Task: Convert Your Shape and Solid Work Into Objects
+
+For the shapes and solids you have coded formulae for, make those into classes
+that provide the area and perimeter (shapes) or surface area and volume (solids).
+
+These classes should also provide the same methods as the example `Square`.  You
+may extend the example class `Shape`  as your base class and use its input validation,
+but be sure to appropriately credit the author.  You will still need to do input
+validation, but you can consider all the inputs checked as positive numbers (if provided)
+after the call to `super(\...)`.
+
+For the twist points, argue what other methods should reasonably belong to
+`Shape`s or `Solid`s.  Can they be implemented generically, *i.e.* on the abstract `Shape` and `Solid` classes,
+or would they have to be implemented in specific types?
