@@ -5,6 +5,14 @@ prep: lists
 
 ## User Input
 
+Often, we want to interact with a program, like for example the Python REPL.  Here
+is a simple input-output loop:
+
+{% include pyblock.md target="input_user.py" %}
+
+We use the `input(\...)` command to prompt the user for input, but must be careful
+as what is submitted is always a string in this version.
+
 ## File Input
 
 ## Task: Input!

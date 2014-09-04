@@ -51,12 +51,15 @@ will come along for free.
 For the shapes and solids you have coded formulae for, make those into classes
 that provide the area and perimeter (shapes) or surface area and volume (solids).
 
-These classes should also provide the same methods as the example `Square`.  You
-may extend the example class `Shape`  as your base class and use its input validation,
-but be sure to appropriately credit the author.  You will still need to do input
-validation, but you can consider all the inputs checked as positive numbers (if provided)
+These classes should also provide the same methods as the example `Square`.  If
+you do not understand some of the methods like `__cmp__`, refer back to the
+magic methods material in the preparatory reading.  You may extend the example
+class `Shape` as your base class and use its input validation, but be sure to
+appropriately credit the author.  You will still need to do input validation,
+but you can consider all the inputs provided as positive numbers
 after the call to `super(\...)`.
 
 For the twist points, argue what other methods should reasonably belong to
-`Shape`s or `Solid`s.  Can they be implemented generically, *i.e.* on the abstract `Shape` and `Solid` classes,
-or would they have to be implemented in specific types?
+`Shape`s or `Solid`s.  Can they be implemented generically, *i.e.* on the
+abstract `Shape` and `Solid` classes, or would they have to be implemented in
+specific types?
