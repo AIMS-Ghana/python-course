@@ -64,7 +64,7 @@ We are going to combine all three of these methods into a single program. You
 will write a Python script that is intended to run from the command line:
 
 ~~~
-$ python3 shaper.py [-(h|f|i)]
+$ python3 geom_input.py [-(h|f|i)]
 ~~~
 
 This script will provide a user geometric properties in response to their input
@@ -148,3 +148,91 @@ print a line explaining the error with that line of input.
 
 Add an `-o` option to be used with `-f` that specifies the output file.  Instead
 of printing the output results, write them as lines in the output file.
+
+### More Examples for Explanation
+
+These examples are based on the discussion in class.
+
+When calling the script without any options, you get a message about how to use
+the script, along the lines of:
+
+~~~
+$ python3 geom_input.py
+usage: geom_input [-h] [-i] [-f "filename"]
+
+   -h             this help display
+   -i             interactive mode
+   -f "filename"  file mode, using filename as source
+~~~
+
+(compare this to what you get from `$ git`, which tells you everything about to
+use command line git).  If you specify the `-h` option, it should look the same.
+Also, all of this happens mostly automatically if you use the `argparse` module.
+
+If we use interactive mode, we should see enter a dialog mode:
+
+~~~
+$ python3 geom_input.py -i
+welcome to shape info, I can tell you about
+ - square
+ - circle
+or you can "quit".
+What shape do you want? |
+~~~
+
+If we enter something it does not understand, it should say so:
+
+~~~
+What shape do you want? donut
+donut is not an option; choose square, circle, or quit.
+What shape do you want? |
+~~~
+
+Once we enter something it does, it should prompt us for the appropriate info and
+also offer the opportunity to pick a different shape.
+
+~~~
+What shape do you want? square
+square: what side length (r to return to shape)? 5
+Square, side length 5; area: 25; perimeter 20
+What shape do you want? |
+~~~
+
+If we give it data it does not understand, it should tell us so:
+
+~~~
+What shape do you want? circle
+circle: what radius length (r to return to shape)? five
+TypeError: enter a positive numerical value.  Provided: five
+circle: what radius length (r to return to shape)? -5
+ValueError: enter a positive numerical value.  Provided: -5
+circle: what radius length (r to return to shape)? 5
+Circle, radius 5; area: 78...; perimeter 31...
+~~~
+
+You can see that the program should not terminate on errors, but return us to
+the prompt.
+
+* * *
+
+For the file mode, the program should handle files that look like:
+
+~~~
+square 5
+triangle 4 10.0
+circle 5 10
+circle 5
+donut please
+square -5
+~~~
+
+and respond to (this example, which is mostly error-ridden) with
+
+~~~
+Square, side length 5; area: 25; perimeter 20
+ValueError: triangle not supported
+AttributeError: circle has too many arguments
+Circle, radius 5; area: 78...; perimeter 31...
+ValueError: donut not supported
+ValueError: must provide positive dimensions, got side:-5
+~~~
