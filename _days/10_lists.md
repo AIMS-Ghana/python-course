@@ -25,6 +25,8 @@ variables we have been working with so far.  They tend to have many samples, and
 samples tend to be a mixture of types of things.  Often times there are samples
 of different kinds of things.
 
+So in general, we need to be able to work with \"collections\" of things.
+
 ## Python Built-in Collections
 
 Python has several built-in collections, serving different purposes.  They are
