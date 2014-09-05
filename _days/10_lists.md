@@ -72,7 +72,13 @@ A `dict` is
 {% include pyblock.md target="colls_dict.py" %}
 
 \... also *not* a sequence of things, but as always, the things can
-be different types.
+be different types.  Most notably, a `dict` is a collection where you can look
+things up by name:
+
+{% highlight python %}
+adict = { 'students':[], 'instructors':['Carl', 'Des'] }
+print(adict['instructors'])
+{% endhighlight %}
 
 ## Comprehensions
 
