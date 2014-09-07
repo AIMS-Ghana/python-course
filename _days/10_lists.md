@@ -15,7 +15,7 @@ a single parameter:
 \end{align}
 
 But the physical world is quite messier than that single parameter.  If want to
-determine \{\omega\} for some actual spring mass (ignoring that the actual
+determine \\(\omega\\) for some actual spring mass (ignoring that the actual
 physics are more complicated than this idealization), we need to gather many
 data points both to actually solve the equation, but also to account for
 measurement error.
