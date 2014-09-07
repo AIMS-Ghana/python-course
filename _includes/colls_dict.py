@@ -15,7 +15,8 @@ print_info(adict)
 
 import turtle
 
-bdict = {'one':1, 'two':'two', 3:3.0, 4.0:turtle.Screen()}
+bdict = {'one':1, 'two':'two',
+         3:3.0, 4.0:turtle.Screen() }
 print_info(bdict)
 
 ## but also:
