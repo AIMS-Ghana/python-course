@@ -1,11 +1,11 @@
 __author__ = 'cap10'
 
 def test_euler_6():
-    assert False
+    assert euler_6(10) == 2640
 
 
-def euler_6(*args):
-    pass
+def euler_6(n):
+    return n
 
 
-print(euler_6())
+print(euler_6(100))
