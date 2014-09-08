@@ -27,3 +27,7 @@ The Gillespie algorithm is basically:
  - advance the system by time and event, and repeat (until particular time or state is reached)
 
 ## How
+
+Represent the **SIR** model equations in a format suitable for solving with `scipy`.
+
+Represent the **SIR** model transitions and rates
