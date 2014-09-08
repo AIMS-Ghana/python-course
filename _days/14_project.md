@@ -10,9 +10,24 @@ Recall:
 
 {% include sir.liquid %}
 
-What are the tools we have picked up from `numpy` and `scipy`:
+What are the tools we have picked up from `numpy` and `scipy`?
 
  - random number generation (`np.random` functions)
+ - ODE integration (`scipy.integrate` options)
+ - roots, fitting (`scipy.optimize` options)
+
+We can use these tools to a few ends:
+
+ - stochastic simulation of this system
+ - numerical integration to determine time series
+ - parameter fitting from data
+
+So, what are some examples of good project work?
+
+ - how the trajectories change based on some parameter change
+ - how the trajectories respond to different initial conditions
+ - how stochastic results compare to the empirical ones
+ - determining the model
 
 We will be implementing two approaches to thinking about a dynamical system:
 
