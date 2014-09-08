@@ -4,8 +4,15 @@ title: Project
 
 ## What
 
-From here on, we will be working to implement a usefully complex model using
-the tools we learned from stock Python, as well as `numpy` and `scipy`.
+For the project, as previously mentioned, you will be working with the SIR model.
+
+Recall:
+
+{% include sir.liquid %}
+
+What are the tools we have picked up from `numpy` and `scipy`:
+
+ - random number generation (`np.random` functions)
 
 We will be implementing two approaches to thinking about a dynamical system:
 

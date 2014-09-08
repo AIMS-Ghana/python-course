@@ -18,17 +18,7 @@ to the relevant state:
  - is currently sick and can spread the infection (**I**)
  - is now immune (**R**) due past exposure, vaccination, *etc*.
 
-<div markdown="0">
-\begin{eqnarray}
-N &=& S + I + R
-\\
-\dot{S} &=& \mu N - \beta S I - \mu S
-\\
-\dot{I} &=& \beta S I - \gamma I - \mu I
-\\
-\dot{R} &=& \gamma I - \mu R
-\end{eqnarray}
-</div>
+{% include sir.liquid %}
 
 For the final project, we will be producing numerical analyses of this system.
 

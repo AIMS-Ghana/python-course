@@ -28,3 +28,8 @@ a, b = 0, 10
 n = 100
 
 print(simpsons(f1,a,b,n))
+print(midpoint(f1,a,b,n))
+print(trapezoid(f1,a,b,n))
+
+pfi = pf1.integ()
+print(pfi(b)-pfi(a))
