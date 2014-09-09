@@ -27,29 +27,13 @@ So, what are some examples of good project work?
  - how the trajectories change based on some parameter change
  - how the trajectories respond to different initial conditions
  - how stochastic results compare to the empirical ones
- - determining the model
-
-We will be implementing two approaches to thinking about a dynamical system:
-
- - using numerical solvers to approximate the system
- - using a stochastic approach, the Gillespie algorithm, to simulate the system
+ - determining the model parameters from a data time series
+ - comparing small modifications to the SIR model to the base model,
+ *e.g.*, adding an **E**xposed compartment.
 
 For an overview of solving dynamical systems using `scipy` and `numpy`, you should
 refer to [this website](http://www.gribblelab.org/compneuro2012/2_Modelling_Dynamical_Systems.html).
 I recommend that you actually follow through that example.
 
-The Gillespie algorithm is basically:
-
- - sum the rates of all possible events in the system (*i.e.* state transitions
-   and system in-out flows)
- - using that rate, draw an exponentially distributed time; this corresponds to
- how long it took for an event to occur
- - determine which event occurred by drawing between the different rates weighted
- by their ratios to the total rate
- - advance the system by time and event, and repeat (until particular time or state is reached)
-
-## How
-
-Represent the **SIR** model equations in a format suitable for solving with `scipy`.
-
-Represent the **SIR** model transitions and rates
+If you would like to try stochastic simulation, you should use the Gillespie
+algorithm.
