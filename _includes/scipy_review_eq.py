@@ -6,7 +6,6 @@ def dSIR(Y, beta, gamma, mu, N0):
     """
     SIR model, for const. pop.
     @param Y: [S, I]
-    @param t: the time step
     @param beta, gamma, nu, N0: model parameters
     @return: [dS, dI]
     """
