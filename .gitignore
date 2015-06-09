@@ -9,3 +9,4 @@ icon.png
 logo.png
 
 .sass-cache
+*.DS_Store
