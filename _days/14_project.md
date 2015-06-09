@@ -1,5 +1,6 @@
 ---
 title: Project
+math: yes
 ---
 
 ## What
