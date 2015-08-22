@@ -31,15 +31,15 @@ fairly complete.
 
 We are going to start by revisiting our numerical equation work.
 
-{% include pyblock.md target="numpy_review.py" %}
+{% include relblock.md target="numpy_review.py" %}
 
 Now we will look at some Project Euler problems, specifically [6](https://projecteuler.net/problem=6)
 and [11](https://projecteuler.net/problem=11).
 
-{% include pyblock.md target="euler_06.py" %}
+{% include relblock.md target="euler_06.py" %}
 
-{% include pyblock.md target="euler_11.py" %}
+{% include relblock.md target="euler_11.py" %}
 
 Finally, we should do some plotting.
 
-{% include pyblock.md target="numpyplotting.py" %}
+{% include relblock.md target="numpyplotting.py" %}

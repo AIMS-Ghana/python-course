@@ -37,7 +37,7 @@ not be negative.
 
 How would we express that?  Here is one possibility:
 
-{% include pyblock.md target='dimension_validate.py' %}
+{% include relblock.md target='dimension_validate.py' %}
 
 That code checks if the argument is a `Number`, and if so, is it greater than zero.
 
@@ -45,7 +45,7 @@ That code checks if the argument is a `Number`, and if so, is it greater than ze
 
 Add input validation to your `geom_formulae.py`.  Here is an **INCOMPLETE** example:
 
-{% include pyblock.md target='square_geom_with_validation.py' %}
+{% include relblock.md target='square_geom_with_validation.py' %}
 
 Your code should validate in the following way:
 

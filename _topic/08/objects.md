@@ -22,7 +22,7 @@ reference to material things.
 
 You have worked with several types in Python so far:
 
-{% include pyblock.md target="sometypes.py" %}
+{% include relblock.md target="sometypes.py" %}
 
 Integers and floating point numbers and character strings are probably familiar,
 at least what the are, if perhaps not as a programming concept.
@@ -31,7 +31,7 @@ But what are those things associated with `turtle` plotting?  They are custom ob
 
 Revisiting our previous example shape:
 
-{% include pyblock.md target="obj_square_i.py" %}
+{% include relblock.md target="obj_square_i.py" %}
 
 Here we have gathered the properties of a particular square in one place and
 provided a uniform way to ask about them, and also to draw this particular
@@ -39,7 +39,7 @@ square.
 
 However, we can do even more:
 
-{% include pyblock.md target="obj_square_ii.py" %}
+{% include relblock.md target="obj_square_ii.py" %}
 
 Here, we have create `Square` as a subclass of `Shape` and deferred certain
 aspects to `Shape`, like input validation and building up the string representation.

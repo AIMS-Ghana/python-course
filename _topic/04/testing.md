@@ -24,7 +24,7 @@ Having tests associated with our code can provide some of that confidence.
 Consider tests of the previous example calculating geometric properties
 for a square:
 
-{% include pyblock.md target='test_square_geom.py' %}
+{% include relblock.md target='test_square_geom.py' %}
 
 What are the notable points?
 

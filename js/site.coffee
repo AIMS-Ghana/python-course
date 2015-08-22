@@ -9,3 +9,9 @@ window.pickStudent = (target) ->
     pickStudent(target)
   else
     false
+
+window.pickQuestion = (target) ->
+  if !confirm(target.options[randInt(target.length-1)].text)
+    pickStudent(target)
+  else
+    false

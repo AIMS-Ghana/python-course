@@ -30,7 +30,7 @@ Python during this course.
 
 Example:
 
-{% include pyblock.md target='square_geom.py' %}
+{% include relblock.md target='square_geom.py' %}
 
 ## Task: Implement Geometric Formulae
 

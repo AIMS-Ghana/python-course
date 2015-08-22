@@ -1,0 +1,1 @@
+{% assign col = page.collection %}{% assign uscol = col | prepend:"_" %}{% include url.lq %}/{{ page.path | split: uscol | last | split:"/" | pop:1 | join:"/" | prepend:col }}

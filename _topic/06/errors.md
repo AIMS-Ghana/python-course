@@ -39,7 +39,7 @@ an error occurs.
 
 Python uses flow control syntax to indicate what should be done with errors:
 
-{% include pyblock.md target="try_geom.py" %}
+{% include relblock.md target="try_geom.py" %}
 
 **THIS CODE IS ACTUALLY NOT HANDLING POSSIBLE ERRORS.  WHAT IS THE PROBLEM?  HOW
 SHOULD WE FIX IT?**

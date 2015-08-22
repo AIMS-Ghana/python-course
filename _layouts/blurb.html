@@ -3,7 +3,7 @@
 <head>
   <title>{{ page.title }}</title>
   {% include favicon.liquid %}
-  <link rel="stylesheet" type="text/css" href="{{ site.absoluteurl }}{{ site.baseurl }}/css/site.css">
+  <link rel="stylesheet" type="text/css" href="{% include url.lq %}/css/site.css">
 </head>
 <body>
 {% capture nav %}{% include nav.md %}{% endcapture %}{{ nav | markdownify }}

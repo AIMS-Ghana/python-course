@@ -1,0 +1,1 @@
+[{{ site.topic[include.which].title }}]({% include url.lq %}{{ site.topic[include.which].url }}){:.{{ site.topic[include.which].instructor}} }

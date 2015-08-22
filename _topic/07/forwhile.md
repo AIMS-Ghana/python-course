@@ -8,7 +8,7 @@ prep: objects
 A `for` block iterates over the items in a collection, and executes for each of
 those items.  Here are several examples:
 
-{% include pyblock.md target="for_i.py" %}
+{% include relblock.md target="for_i.py" %}
 
 What does the last iteration correspond to?
 
@@ -16,13 +16,13 @@ What does the last iteration correspond to?
 
 A `while` block loops as long as a condition is met.  It can simulate a `for` loop:
 
-{% include pyblock.md target="for_ii.py" %}
+{% include relblock.md target="for_ii.py" %}
 
 but more generally it is used for checking a more complicated conditional.  If
 we wanted to calculate the Fibonacci sequence to a fixed approximation of $\phi$
 rather than for a fixed number of steps:
 
-{% include pyblock.md target="while_i.py" %}
+{% include relblock.md target="while_i.py" %}
 
 ## Task: Implement the Secant Method
 
@@ -69,4 +69,4 @@ Twist points:
 
 This script skeleton may be a useful starting point:
 
-{% include pyblock.md target="skeleton_methods.py" %}
+{% include relblock.md target="skeleton_methods.py" %}

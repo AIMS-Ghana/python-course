@@ -15,7 +15,7 @@ continuous line or surface.
 
 Python has a basic library for drawing lines called `turtle`:
 
-{% include pyblock.md target="plot_ii.py" %}
+{% include relblock.md target="plot_ii.py" %}
 
 You can direct turtles to move about and draw lines as they do so.  There are
 more ways to direct the turtle, so feel free to consult the detailed documentation.
@@ -29,7 +29,7 @@ We will also be using a mathematical plotting library `matplotlib`, which has
 capabilities appropriate to creating visualizations of scientific and
 mathematical results.
 
-{% include pyblock.md target="plot_i.py" %}
+{% include relblock.md target="plot_i.py" %}
 
 You can basically create series of numbers (`S`, `A`, and `P` in this case), then
 plot lines using those points as the reference.  There are several ways to change

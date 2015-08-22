@@ -1,34 +1,19 @@
 absoluteurl: http://AIMS-Ghana.github.io
 baseurl: '/python-course'
-repourl: 'https://raw.githubusercontent.com/AIMS-Ghana/python-course/gh-pages/_includes/'
 markdown: kramdown
+name: Programming for Research with Python
 css:
   active: "active"
 collections:
-  days:
+  topic:
     output: true
-  students:
-    output: true
+    permalink: topic/:name/
 defaults:
   -
     scope:
       path: ""
-      type: "days"
     values:
       layout: "section"
-  -
-    scope:
-      path: ""
-      type: "students"
-    values:
-      layout: "blurb"
-      status: "past"
-  -
-    scope:
-      path: "students/2014-2015"
-      type: "students"
-    values:
-      status: current
 exclude:
  - run.sh
  - Gemfile

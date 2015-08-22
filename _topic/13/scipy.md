@@ -32,7 +32,7 @@ in their application than the particular details of implementing them.
 The `scipy` module provides these methods in a packaged way.  We can revisit
 our numerical integration and root finding activities using the `scipy` capabilities:
 
-{% include pyblock.md target="scipy_review.py" %}
+{% include relblock.md target="scipy_review.py" %}
 
 Additionally, like `numpy` defines power series / polynomials, `scipy` also defines
 special classes of functions.  These are the solutions to particular integro-differential
@@ -48,7 +48,7 @@ Recall
 We can represent these relationships in a straightforward computational way,
 after noting \\(\dot{N}=0\\) in our particular specification:
 
-{% include pyblock.md target="SIR.py" %}
+{% include relblock.md target="SIR.py" %}
 
 It is as simple as that to get the dynamics from a particular initial condition
 and parameter combination.
@@ -56,4 +56,4 @@ and parameter combination.
 Let us consider another typical question for the SIR model: what is the equilibrium
 condition?  This is essentially a root-finding problem for multiple variables.
 
-{% include pyblock.md target="scipy_review_eq.py" %}
+{% include relblock.md target="scipy_review_eq.py" %}

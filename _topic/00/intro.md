@@ -8,15 +8,13 @@ prep: toolkit
 ## Getting Accounts Sorted
 
 1. Account at the lab machine (should be done)
-2. [Github](https://github.com) - get an account (should be done), [create and register ssh key](https://help.github.com/articles/generating-ssh-keys)
+2. [Github](https://github.com) - get an account, [create and register ssh key](https://help.github.com/articles/generating-ssh-keys)
 3. optional: [StackOverflow](http://stackoverflow.com),
    [Python Forum](http://www.python-forum.org/), etc.
 
 ## Machine Setup
 
-1. [PyCharm](http://www.jetbrains.com/pycharm/) (should be installed)
-2. Configure PyCharm: showing spaces, showing line numbers, Python version, unit test setting, documentation
-3. optional for personal machines: [SmartGit](http://www.syntevo.com/smartgit/)
+1. optional Python IDE: [PyCharm](http://www.jetbrains.com/pycharm/)
 
 ## Course Overview
 

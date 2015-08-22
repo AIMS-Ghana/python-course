@@ -36,7 +36,7 @@ either sequential (`tuple`, `list`, `range`) or not (`dict`, `set`).
 
 A `tuple` is
 
-{% include pyblock.md target="colls_tuples.py" %}
+{% include relblock.md target="colls_tuples.py" %}
 
 \... a sequence of things, not necessarily the same type.  You use a tuple when
 you need a sequence, but do *not* need to change what is in the sequence.
@@ -45,7 +45,7 @@ you need a sequence, but do *not* need to change what is in the sequence.
 
 A `list` is a
 
-{% include pyblock.md target="colls_list.py" %}
+{% include relblock.md target="colls_list.py" %}
 
 \... *also* a sequence of things, not necessarily the same type.  *However*, you
 can change the contents of a `list`, either adding, deleting or replacing elements.
@@ -59,7 +59,7 @@ to `tuple`s and `list`s?
 
 A `set` is
 
-{% include pyblock.md target="colls_set.py" %}
+{% include relblock.md target="colls_set.py" %}
 
 \... *not* a sequence of things, but like `tuple`s and `list`s, the things can
 be different types.  *However*, only unique things appear in the set.  We can
@@ -69,7 +69,7 @@ still loop over the contents of a `set` but there are no guarantees about the or
 
 A `dict` is
 
-{% include pyblock.md target="colls_dict.py" %}
+{% include relblock.md target="colls_dict.py" %}
 
 \... also *not* a sequence of things, but as always, the things can
 be different types.  Most notably, a `dict` is a collection where you can look
@@ -85,4 +85,4 @@ print(adict['instructors'])
 Comprehensions are a way to take these basic collections and filter or transfrom
 them in a very compact syntax:
 
-{% include pyblock.md target="colls_comps.py" %}
+{% include relblock.md target="colls_comps.py" %}
