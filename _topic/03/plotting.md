@@ -1,7 +1,25 @@
 ---
 title: Plotting
-prep: testing
+warmup: true
 ---
+
+## HW Review
+
+What did people have the most trouble figuring out?
+
+## Programming
+
+Thing big: what was this homework about?
+
+## Key Research Ideas
+
+ - plan to visualize results
+
+## Key Python Ideas
+
+ - old: defining functions
+ - functions as inputs to functions
+ - plotting libraries
 
 ## How Do We Understand Mathematical Results?
 
@@ -41,51 +59,3 @@ this syntax (namely `vectorize` and `linspace` to make your functions able to re
 we will cover `numpy` more thoroughly later.  However, if you want to read ahead,
 feel free to start with [`vectorize`](http://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html)
 and [`linspace`](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html).
-
-## Task: Draw Geometric Figures, Plot Properties
-
-Using the shapes for which you implemented geometric formulae, create
-functions that draw those shapes using turtles.  We will be adding plotting for
-solids later, but if you wish to start now, [start here](http://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html).
-
-Also create functions which will plot curves for their properties by varying one dimension.
-
-For the twist points:
-
- - use your shape-turtle functions (possibly with some modification) to draw a single
- scene with several different shapes of the same area.  Vary the color of those
- shapes according to their relative perimeters.
- - for shapes or solids that have multiple dimensions, find a way to capture
- the effects of varying both
- - for each of the shapes and solids, plot the trends for two properties (*e.g.*, area
-   and perimeter, volume and surface area)
-
-## Task II: Provide Student Info For Course Site
-
-Some people had trouble with this pseudo-task last week.  To review:
-
- - fork the course repository
- - **add** a file in the `_students/2014-2015` directory that is `YOURGITHUBUSER.md`
- - put in that file the information present in the `_students/_template.txt` file.
- - do *not* rename or replace that file
- - **NEW**, you should add a picture of yourself to the repository in the `students`
- directory.  The easiest way to do this will be to pull the repository to your
- machine, add the picture, commit, and push the results.  You may find this approach
- easier for the earlier steps as well, though they can be completed on the GitHub
- site
-
-For convenience, the template file is:
-
-~~~ yaml
----
-name: Your Full Name, the name you go by first
-country: Your Home
-gh: "Your GitHib Handle (no @)"
----
-
-Overwrite this with whatever content you want on your page.  A short professional blurb,
-some resume-like info, *etc* are good options.  Keep in mind this is publicly
-published on the internet.
-
-This region *may* contain [kramdown](http://kramdown.gettalong.org/syntax.html) formated content.
-~~~

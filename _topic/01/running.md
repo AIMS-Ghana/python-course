@@ -47,3 +47,7 @@ The tool `git` is for doing *version control*.  This is very important for compl
 projects, so we will be using it as part of the course.  However, we won't go into
 details, since it's a lot of extra work for this level of coding.
 
+## Project Advice
+
+The project assignments both entail programs run from the command line, that receive
+arguments.  You should now know how to at least draft that part of the problem.

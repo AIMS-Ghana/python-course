@@ -1,71 +1,40 @@
 ---
 title: Variables and Functions
 warmup: true
+hw: true
 ---
 
-## Mathematical Variables, Parameters, Functions, Equations, *etc*
+## HW Review
 
-What do each of the symbols in the following mean?
+What did people have the most trouble figuring out?
 
-\begin{align}
-f(\theta) = r\sin\theta + r\cos\theta
-\end{align}
+## Programming
 
-**DISCUSSION: WHAT CONCEPTS DO THESE IDEAS REPRESENT IN MATHEMATICS?**
+Thing big: what was this homework about?
 
-## Translating that into Programming Concepts
+## Key Python Ideas
 
-In programming, we have two kinds of language:
+ - old: using the interpreter, writing a script, using command line arguments and variables
+ - defining functions
+ - `if __name__ == "__main__"` paradigm
 
- - *reserved words*, also called *keywords* or sometimes syntax (when the discussion is
-   also including the language grammar), the part the language defines
- - variables, functions, *etc* - the part we define
+## Advanced Version
 
-For many languages, this line can be blurry, much like the meaning of the \"+\"
-in the equation we discussed earlier.  We will not get into those aspects of
-Python during this course.
+Create a `shapes.py` in your homework directory, which behaves like:
 
-**DISCUSS: HOW DO THESE CONCEPTS LINK THE MATHEMATICAL ONES WE JUST REVIEWED?**
+{% highlight bash %}
+python-course-homework username$ ./shapes.py
+Error: no input
+python-course-homework username$ ./shapes.py TRIANGLE 1
+equilateral triangle, area 1, sides: ...
+python-course-homework username$ ./shapes.py SQUARE 1
+square, area 1, sides: ...
+python-course-homework username$ ./shapes.py CIRCLE 1
+circle, area 1, sides: ...
+{% endhighlight %}
 
-Example:
+When you have completed this, add it to your repository.
 
-{% include relblock.md target='square_geom.py' %}
+## Project Advice
 
-## Task: Implement Geometric Formulae
-
-Your assignment:
-
- - create a file in your PyCharm project / local repository named `geom_formulae.py`
- - pick at least 10 other shapes or solids, for which you will be coding geometric formulae (*e.g.*,
-   perimeter, area, volume, surface area)
- - implement those formulae as functions and verify the results for dimensions
- that you can check with pen and paper
- - challenge: who can implement the most formulae?
-
-Feedback will be out of 10 points, 2 points corresponds to passing.  All
-assignments are turned in by (1) pushing your work to your GitHub repository,
-and (2) by emailing the pertinent files to in reply to the assignments email.
-
- - To get any points at all, you must earn these 2:
-    * have at least ten shapes and solids with formulae, 1 point
-    * those formulae work, 1 point
- - you check a classmates work and they pass their assignment, 1 point (do this by
-adding an issue to their repository with any comments)
- - your script complies with PEP-8, 1 point
- - if all of your working formulae:
-    * have informative names, 1 point
-    * have informative argument names, 1 point
-    * have documentation, 1 point
-    * that documentation includes a demonstration case, 1 point
- - you have at least one property that can be calculated with different kinds of
- arguments, 1 point
- - you have at least one formula with 3 or more meaningful arguments, 1 point
-
-Future assignments will be evaluated similarly: a few points for the absolute
-minimum, a point for checking classmates work, more points for following good
-coding practices, and then a point or two for a twist.
-
-Several future assignments also build off this one.  If you find this work easy
-to complete, you should first make sure your classmates also get this assignment,
-but then feel free to proceed to adding plots and validation to your formulae
-(the next two assignments).
+The shape drawing project requires similar capabilities to the extended version of the homework.

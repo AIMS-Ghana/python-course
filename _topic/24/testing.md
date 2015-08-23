@@ -1,6 +1,5 @@
 ---
 title: Testing
-prep: ifelse
 ---
 
 ## Proof and Programming

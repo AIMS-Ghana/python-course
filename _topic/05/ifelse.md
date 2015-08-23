@@ -1,6 +1,6 @@
 ---
-title: "Flow Control: `if-else`"
-prep: errors
+title: Flow Control with If-Else
+warmup: true
 ---
 
 ## Recall: Piece-wise defined Functions And Function Domains

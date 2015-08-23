@@ -60,10 +60,10 @@ If no file for plotting is provided, the code should save a "plot.png" file.
 In summary, you program should run as:
 
 {% highlight bash %}
-python-course-homework username$ ./SEIR.py
-Error: no json file provided
 python-course-homework username$ ./SEIR.py withnegativevalues.json
 Error: the parameter input had negative values for whichever inputs
+python-course-homework username$ ./SEIR.py
+... same as next line ...
 python-course-homework username$ ./SEIR.py -h
 ... useful info about usage ...
 python-course-homework username$ ./SEIR.py config.json
