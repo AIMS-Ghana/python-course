@@ -4,6 +4,7 @@ layout: compress
 <!doctype html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>{{ site.name }}{% if page.title %} : {{ page.title }}{% endif %}</title>
   {% include favicon.liquid %}
   <link rel="stylesheet" type="text/css" href="{% include url.lq %}/css/site.css">
@@ -28,8 +29,9 @@ layout: compress
   <div class="prevnext">{% include daynav.liquid %}</div>
 {% endif %}
 <div class="content">
+{% include warmup.htm %}
 {{ content }}
-{% if page.prep %}{% capture pp %}{% include prep.md %}{% endcapture %}{{ pp | markdownify }}{% endif %}
+{% include hw.htm %}
 </div>
 </body>
 </html>

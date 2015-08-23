@@ -1,0 +1,5 @@
+{% if page.hw %}
+<h2>HOMEWORK</h2>
+{% capture hw %}{% include_relative hw.md %}{% endcapture %}
+{{ hw | markdownify }}
+{% endif %}

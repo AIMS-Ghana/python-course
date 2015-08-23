@@ -1,7 +1,7 @@
 absoluteurl: http://AIMS-Ghana.github.io
 baseurl: '/python-course'
 markdown: kramdown
-name: Programming for Research with Python
+name: Introduction to Programming for Research with Python
 css:
   active: "active"
 collections:

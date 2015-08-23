@@ -225,3 +225,17 @@ body {
 
   }
 }
+
+.randomize {
+  font-size: 2em;
+  color: white;
+  background-color: black;
+  list-style-type: none;
+  padding: 0px;
+  li {
+    padding: 10px;
+    display: none;
+    width: auto;
+    &.shown { display: inherit; }
+  }
+}

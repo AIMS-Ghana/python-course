@@ -1,0 +1,5 @@
+{% if page.warmup %}
+<h2>WARMUP</h2>
+{% capture wu %}{% include_relative warmup.md %}{% endcapture %}
+{{ wu | markdownify }}
+{% endif %}

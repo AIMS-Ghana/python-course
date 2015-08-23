@@ -1,7 +1,6 @@
 ---
-title: "Variables, Functions"
-prep: plotting
-math: yes
+title: Variables and Functions
+warmup: true
 ---
 
 ## Mathematical Variables, Parameters, Functions, Equations, *etc*
