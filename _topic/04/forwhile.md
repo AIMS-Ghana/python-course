@@ -1,6 +1,7 @@
 ---
 title: Flow Control with For and While
-prep: objects
+warmup: true
+hw: true
 ---
 
 ## Sequential Iteration with `for` loops
@@ -64,9 +65,3 @@ Twist points:
  - also be able to receive a series of points as an argument
  - provide a method that will plot the integral for a particular function and endpoints
  as a function of the resolution.
-
-## Starting Script
-
-This script skeleton may be a useful starting point:
-
-{% include relblock.md target="skeleton_methods.py" %}

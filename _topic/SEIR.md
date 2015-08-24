@@ -5,22 +5,22 @@ title: SEIR Model Project
 ## Project Overview
 
 You will write a program that will calculate the dynamics for an SEIR
-system of differential equations.  That program should accept input in the form
+system of differential equations and stochastic simulations of that same system (the Gillespie model).  That program should accept input in the form
 of a `json` file and optional output targets for numerical and plotted results.
 
 ## File Format
 
 ### JSON Input
 
-The format of the optional json file is (`+f` means non-negative floating point number, `++f` means strictly positive):
+The format of the optional json file is (`+f` means non-negative floating point number, `++f` means strictly positive, `+i` means non-negative integer):
 
 {% highlight json %}
 {
   "beta": +f,
   "sigma": +f,
   "rho": +f,
-  "mu": +f,
-  "Y0": [+f, +f, +f, +f],
+  "delta": +f,
+  "Y0": [+i, +i, +i, +i],
   "tmax": ++f
 }
 {% endhighlight %}
@@ -40,11 +40,22 @@ So results might look like:
 
 {% highlight text %}
 t, S, E, I, R
-0, .99, 0, 0.01, 0
+0, 99, 0, 1, 0
 ... etc ...
 {% endhighlight %}
 
 If no file for numerical output is provided, it should be output to the screen.
+
+The program should accept a `-g N` option, which means produce N Gillespie simulations.  Gillespie simulations
+should run until there are only S and R populations.  The format for simulation output should be:
+
+{% highlight text %}
+n, t, S, E, I, R
+0, 0, 99, 0, 1, 0
+... etc ...
+{% endhighlight %}
+
+where *n* identifies the run number.
 
 Your numerical results should be accurate to 1e-6 absolute tolerance or better.
 

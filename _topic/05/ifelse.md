@@ -3,6 +3,25 @@ title: Flow Control with If-Else
 warmup: true
 ---
 
+## HW Review
+
+What did people have the most trouble figuring out?
+
+## Programming
+
+Thing big: what was this homework about?
+
+## Key Research Ideas
+
+ - pseudo-random numbers
+
+## Key Python Ideas
+
+ - old: defining functions
+ - functions as inputs to functions
+ - plotting libraries
+
+
 ## Recall: Piece-wise defined Functions And Function Domains
 
 **DISCUSS: WHAT ARE SOME EXAMPLES OF PIECEWISE DEFINED FUNCTIONS?**
