@@ -115,7 +115,7 @@ python-course-homework yourusername$ ./turnin.sh AN EXPLANATION OF ANY CHANGES Y
 
 ## Setting Up Access to Homework Repository
 
-Follow these steps **IF AND ONLY IF** you have sent Carl your Github username.
+Follow these steps **IF AND ONLY IF** you have sent Carl your Github username **AND** have accepted the team invitation.
 
 In the commands below, replace $USERNAME with your AIMS user name.
 
