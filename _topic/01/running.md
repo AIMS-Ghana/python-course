@@ -6,7 +6,7 @@ hw: true
 
 ## HW Review
 
-What did people have the most trouble figuring out?
+What did people have the most trouble figuring out? [ask random](#askrandom){:.random}
 
 ## Programming
 

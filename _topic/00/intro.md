@@ -113,3 +113,19 @@ To turn in homework, you need to update your branch of that repository with the 
 python-course-homework yourusername$ ./turnin.sh AN EXPLANATION OF ANY CHANGES YOU MADE
 {% endhighlight %}
 
+## Setting Up Access to Homework Repository
+
+Follow these steps **IF AND ONLY IF** you have sent Carl your Github username.
+
+In the commands below, replace $USERNAME with your AIMS user name.
+
+{% highlight text %}
+cd ~
+git clone git@github.com:AIMS-Ghana/python-course-homework.git
+git checkout -b $USERNAME-hw
+touch $USERNAME.md
+git add --all
+git commit -m "initial commit"
+git push -u origin $USERNAME-hw
+git branch -d master
+{% endhighlight %}
