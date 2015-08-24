@@ -110,7 +110,7 @@ to files you will need to make for homework assignments - and a script called `t
 To turn in homework, you need to update your branch of that repository with the changes you make to those files.  You will need to learn how to do that, but in the meantime you can use the `turnin` script:
 
 {% highlight bash %}
-python-course-homework yourusername$ ./turnin.sh AN EXPLANATION OF ANY CHANGES YOU MADE
+{{ site.hwprompt }} ./turnin.sh AN EXPLANATION OF ANY CHANGES YOU MADE
 {% endhighlight %}
 
 ## Setting Up Access to Homework Repository

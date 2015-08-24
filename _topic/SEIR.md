@@ -71,18 +71,18 @@ If no file for plotting is provided, the code should save a "plot.png" file.
 In summary, you program should run as:
 
 {% highlight bash %}
-python-course-homework username$ ./SEIR.py withnegativevalues.json
+{{ site.hwprompt }} ./SEIR.py withnegativevalues.json
 Error: the parameter input had negative values for whichever inputs
-python-course-homework username$ ./SEIR.py
+{{ site.hwprompt }} ./SEIR.py
 ... same as next line ...
-python-course-homework username$ ./SEIR.py -h
+{{ site.hwprompt }} ./SEIR.py -h
 ... useful info about usage ...
-python-course-homework username$ ./SEIR.py config.json
+{{ site.hwprompt }} ./SEIR.py config.json
 ... rows of numerical output, including header line ...
-python-course-homework username$ ls plot.png
+{{ site.hwprompt }} ls plot.png
 ... finds plot you just made ...
-python-course-homework username$ ./SEIR.py config2.json target.csv target.png
-python-course-homework username$ ls target.*
+{{ site.hwprompt }} ./SEIR.py config2.json target.csv target.png
+{{ site.hwprompt }} ls target.*
 ... finds the csv and png you just created ...
 {% endhighlight %}
 

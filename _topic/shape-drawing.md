@@ -32,16 +32,16 @@ If an output file is provide, the program should save a png of the final picture
 In summary, you program should run as:
 
 {% highlight bash %}
-python-course-homework username$ ./shape-drawing.py garbageinput.csv
+{{ site.hwprompt }} ./shape-drawing.py garbageinput.csv
 Error: ... indicate what is wrong on the first line with an error ...
-python-course-homework username$ ./shape-drawing.py
+{{ site.hwprompt }} ./shape-drawing.py
 ... same as next line ...
-python-course-homework username$ ./shape-drawing.py -h
+{{ site.hwprompt }} ./shape-drawing.py -h
 ... useful info about usage ...
-python-course-homework username$ ./shape-drawing.py input.csv
+{{ site.hwprompt }} ./shape-drawing.py input.csv
 ... real time animation of shape drawing ...
-python-course-homework username$ ./shape-drawing.py input.csv output.png
-python-course-homework username$ ls output.png
+{{ site.hwprompt }} ./shape-drawing.py input.csv output.png
+{{ site.hwprompt }} ls output.png
 ... finds plot you just made ...
 {% endhighlight %}
 

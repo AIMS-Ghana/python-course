@@ -24,11 +24,11 @@ Thing big: what was this homework about?
 Create a `hw3.py` in your homework directory, which behaves like:
 
 {% highlight bash %}
-python-course-homework username$ ./hw3.py
+{{ site.hwprompt }} ./hw3.py
 hello World!
-python-course-homework username$ ./hw3.py Carl Des Ghana
+{{ site.hwprompt }} ./hw3.py Carl Des Ghana
 hello Carl, Des, and Ghana!
-python-course-homework username$ ./hw3.py Some Other Names
+{{ site.hwprompt }} ./hw3.py Some Other Names
 hello Some, Other, and Names!
 {% endhighlight %}
 
@@ -36,11 +36,11 @@ When you have completed this, add it to your repository.  You can't use the `tur
 for this, since it only updates existing files:
 
 {% highlight bash %}
-python-course-homework username$ git status
+{{ site.hwprompt }} git status
 ...output about your repository
-python-course-homework username$ git add hw3.py
-python-course-homework username$ git commit -m "add hw3 to repo"
-python-course-homework username$ git push
+{{ site.hwprompt }} git add hw3.py
+{{ site.hwprompt }} git commit -m "add hw3 to repo"
+{{ site.hwprompt }} git push
 {% endhighlight %}
 
 The tool `git` is for doing *version control*.  This is very important for complicated

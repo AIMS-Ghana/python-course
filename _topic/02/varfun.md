@@ -23,13 +23,13 @@ Thing big: what was this homework about?
 Create a `shapes.py` in your homework directory, which behaves like:
 
 {% highlight bash %}
-python-course-homework username$ ./shapes.py
+{{ site.hwprompt }} ./shapes.py
 Error: no input
-python-course-homework username$ ./shapes.py TRIANGLE 1
+{{ site.hwprompt }} ./shapes.py TRIANGLE 1
 equilateral triangle, area 1, sides: ...
-python-course-homework username$ ./shapes.py SQUARE 1
+{{ site.hwprompt }} ./shapes.py SQUARE 1
 square, area 1, sides: ...
-python-course-homework username$ ./shapes.py CIRCLE 1
+{{ site.hwprompt }} ./shapes.py CIRCLE 1
 circle, area 1, sides: ...
 {% endhighlight %}
 

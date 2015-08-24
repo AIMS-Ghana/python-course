@@ -3,7 +3,7 @@ Write program `draw_shape.py`, which defines a function that receives the shape 
 When you have finished that, the file `render_shapes.py` (already implemented, no need to fiddle with it) should now work as follows:
 
 {% highlight bash %}
-python-course-homework username$ ./render_shapes.py
+{{ site.hwprompt }} ./render_shapes.py
 ... draws a series of shapes ...
 {% endhighlight %}
 
