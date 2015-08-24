@@ -14,7 +14,7 @@ Thing big: what was this homework about?
 
 ## Key Python Ideas
 
- - using the interpreter
+ - using the interpreter (also, possibly pre-checking work in REPL, IDE)
  - writing a script, particularly with a "shebang" a/k/a `#!` line
  - using command line arguments
  - variables
@@ -33,7 +33,7 @@ hello Some, Other, and Names!
 {% endhighlight %}
 
 When you have completed this, add it to your repository.  You can't use the `turnin` script
-for this, since it only updates existing files:
+for this, since it only updates existing files, so you'll need to add the file:
 
 {% highlight bash %}
 {{ site.hwprompt }} git status
@@ -45,9 +45,15 @@ for this, since it only updates existing files:
 
 The tool `git` is for doing *version control*.  This is very important for complicated
 projects, so we will be using it as part of the course.  However, we won't go into
-details, since it's a lot of extra work for this level of coding.
+details very deeply, since it's a lot of extra work for this level of coding.  You can take
+this opportunity to familiarize yourself with the tool, however.
 
 ## Project Advice
 
-The project assignments both entail programs run from the command line, that receive
-arguments.  You should now know how to at least draft that part of the problem.
+The project assignments both entail programs run from the command line and that receive
+arguments.
+
+For the SEIR model, formatted outputs (which we talked about as part of `hw3.py`) are also useful.
+
+You should now know how to at least draft that part of the problem.  You can start on your code by creating
+the appropriate files in your repository, and adding comments (or even actual code) that solves just this piece of the problem.  Later you can adjust that code as necessary, and integrate it with the rest of your solution.

@@ -110,7 +110,13 @@ to files you will need to make for homework assignments - and a script called `t
 To turn in homework, you need to update your branch of that repository with the changes you make to those files.  You will need to learn how to do that, but in the meantime you can use the `turnin` script:
 
 {% highlight bash %}
-{{ site.hwprompt }} ./turnin.sh AN EXPLANATION OF ANY CHANGES YOU MADE
+{{ site.hwprompt }} ./turnin.sh "AN EXPLANATION OF ANY CHANGES YOU MADE"
+{% endhighlight %}
+
+Occasionally, you will need to update your version of the repository w/ new assignments.  You can do that with the following code.  This will not affect any work you have *completed*, though you should ensure you have turned all current work prior to using update:
+
+{% highlight bash %}
+{{ site.hwprompt }} ./update.sh
 {% endhighlight %}
 
 ## Setting Up Access to Homework Repository

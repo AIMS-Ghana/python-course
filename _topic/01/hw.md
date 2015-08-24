@@ -1,4 +1,4 @@
-Write programs, `triangle.py`, `rectangle.py`, `circle.py` that work as follows:
+Update the files `triangle.py`, `rectangle.py`, `circle.py` so that they work as follows:
 
 {% highlight bash %}
 {{ site.hwprompt }} ./triangle.py 1 1 1
