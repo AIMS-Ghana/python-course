@@ -42,27 +42,10 @@ computers - particularly inputting commands at the terminal and using a
 plaintext editor - and general maths concepts - particularly calculus,
 probability, and geometry.
 
-### Method
-
- - variables, constants, and functions
- - input and output devices
- - flow control with branching (`if`-`else`) and iteration (`for`, `while`)
- - collections
- - functional programming (comprehensions, iterators, generators)
- - objects
- - reuse / libraries / packages
-
-and several development tools and practices that are especially important to
-scientific reproducibility:
-
- - version control / data management
- - unit testing
- - literate programming
-
 ## Other Resources
 
  - Coursera Courses
    * [for interactive applications](https://www.coursera.org/course/interactivepython)
    * [for basic programming](https://www.coursera.org/course/pythonlearn)
- - online books:
+ - online books
    * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
