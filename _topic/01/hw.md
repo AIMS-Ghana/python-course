@@ -22,17 +22,13 @@ Additionally, the file `basic_shapes.py` (already implemented, no need to fiddle
 {% highlight bash %}
 python-course-homework username$ ./basic_shapes.py
 Equilateral Triangle, side 4:
-area:
-perimeter:
+a: ..., p: ...
 Square, side 4:
-area:
-perimeter:
+a: ..., p: ...
 Rectange, sides 4, 5:
-area:
-perimeter:
+a: ..., p: ...
 Circle, radius 3:
-area:
-perimeter:
+a: ..., p: ...
 {% endhighlight %}
 
 The `basic_shapes.py` file imports those other files, so you will need to examine it to know what function names to use.
