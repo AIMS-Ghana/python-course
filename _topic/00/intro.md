@@ -120,6 +120,8 @@ Follow these steps **IF AND ONLY IF** you have sent Carl your Github username.
 In the commands below, replace $USERNAME with your AIMS user name.
 
 {% highlight text %}
+git config --global user.email "YOURAIMSEMAIL@aims.edu.gh"
+git config --global user.name "YOUR NAME"
 cd ~
 git clone git@github.com:AIMS-Ghana/python-course-homework.git
 cd python-course-homework
