@@ -122,6 +122,7 @@ In the commands below, replace $USERNAME with your AIMS user name.
 {% highlight text %}
 cd ~
 git clone git@github.com:AIMS-Ghana/python-course-homework.git
+cd python-course-homework
 git checkout -b $USERNAME-hw
 touch $USERNAME.md
 git add --all
