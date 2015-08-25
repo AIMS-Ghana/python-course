@@ -3,6 +3,11 @@ title: Flow Control with For and While
 warmup: true
 hw: true
 ---
+{% include startup.md %}
+
+## Key Research Ideas
+
+ - sequential vs conditional loops
 
 ## Sequential Iteration with `for` loops
 
@@ -25,43 +30,16 @@ rather than for a fixed number of steps:
 
 {% include relblock.md target="while_i.py" %}
 
-## Task: Implement the Secant Method
+## Advanced Version
 
-Basic requirement: provide a method that receives
+We've done two basic loops, `for` loop for the mid-point method
+and `while` loop for bisection root finding.  Now we'll implement another integrator (the Trapezoid Method in `trapeziod.py`) and another root finder (the Secant Method in `secant.py`).
 
- - a function,
- - two initial guesses for zeroes,
- - and a desired tolerance
+Once you've done so, the following code (already in your homework directory) should work:
 
-and using those, applies the Secant method.
-
-From here on, your assignments should always do appropriate input validation.
-
-The twist points:
- - provide an alternative implementation that can use the derivative (another function argument), which is of
-course the Newton-Rhapson Method.
- - have the program determine which approach to use based on the input to the same
- function
-
-Your results will be evaluated based on a function `(x: Number) -> Number` we supply to your code.
-
-## Task: Implement the Midpoint, Trapezoid, and Simpson\'s Methods
-
-Basic requirement: provide methods that receive
-
- - a function (again, `(x: Number) -> Number`),
- - start and end points,
- - and a resolution,
-
-and using those applies the appropriate integration method.
-
-Remember: input validation!  Also, recall the `np.linspace` method we borrowed from
-`numpy` earlier.
-
-Twist points:
-
- - provide a method which receives the above info as well as a string
- \"midpoint\", \"trapezoid\", \"simpson\", and dispatches to the requested method
- - also be able to receive a series of points as an argument
- - provide a method that will plot the integral for a particular function and endpoints
- as a function of the resolution.
+~~~
+{{ site.hwprompt }} ./try_integrators2.py
+...
+{{ site.hwprompt }} ./try_roots2.py
+...
+~~~

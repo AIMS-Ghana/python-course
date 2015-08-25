@@ -31,4 +31,8 @@ We are going to modify your drawings to:
  2. take arguments for the fill color, but fill with black if no color is provided
  3. draw the figures on the same diagram, if requested
 
-After you have modified your code, the `render_shapes2.py` script should produce a series of nested shapes in different colors, but your code **SHOULD CONTINUE TO WORK FOR THE ORIGINAL HOMEWORK**.
+After you have modified your code, the `render_shapes2.py` script should produce a series of nested shapes in different colors, but your code **SHOULD CONTINUE TO WORK FOR THE ORIGINAL HOMEWORK**.  The one difference is that the shapes should be filled (if they weren't before).
+
+## Project Advice
+
+This is more capability that you need to complete one of the projects.  We also covered thinking about how to extend your existing work, and how to build that work in a way that can be extended.  You will need to do a bit more extension on your own for the project.
