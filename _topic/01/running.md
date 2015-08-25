@@ -19,10 +19,12 @@ Create a `hw3.py` in your homework directory, which behaves like:
 {% highlight bash %}
 {{ site.hwprompt }} ./hw3.py
 hello World!
+{{ site.hwprompt }} ./hw3.py Carl Des
+hello Carl and Des!
 {{ site.hwprompt }} ./hw3.py Carl Des Ghana
-hello Carl, Des, and Ghana!
-{{ site.hwprompt }} ./hw3.py Some Other Names
-hello Some, Other, and Names!
+hello Carl, Des and Ghana!
+{{ site.hwprompt }} ./hw3.py Some Other Names Too
+hello Some, Other, Names and Too!
 {% endhighlight %}
 
 When you have completed this, add it to your repository.  You can't use the `turnin` script
