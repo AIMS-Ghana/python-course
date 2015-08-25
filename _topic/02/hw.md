@@ -8,7 +8,3 @@ When you have finished that, the file `render_shapes.py` (already implemented, n
 {% endhighlight %}
 
 The `render_shapes.py` file imports those other files, so you will need to examine it to know what function names to use.
-
-Next, the file `render_curves.py` identifies several functions for you to implement, and once you do, it will produce a plot of those curves.  Update the `curves.py` file with the relevant definitions.
-
-As you work through this homework, you should consider committing your incremental progress.

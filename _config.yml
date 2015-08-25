@@ -2,7 +2,8 @@ absoluteurl: http://AIMS-Ghana.github.io
 baseurl: '/python-course'
 markdown: kramdown
 name: Introduction to Programming for Research with Python
-hwprompt: "yourusername:python-course-homework$"
+aimsprompt: "yourusername:python-course-homework"
+hwprompt: "$"
 css:
   active: "active"
 collections:

@@ -3,14 +3,7 @@ title: Variables and Functions
 warmup: true
 hw: true
 ---
-
-## HW Review
-
-What did people have the most trouble figuring out? {% include random.md %}
-
-## Programming
-
-Thing big: what was this homework about? {% include random.md %}
+{% include startup.md %}
 
 ## Key Python Ideas
 
