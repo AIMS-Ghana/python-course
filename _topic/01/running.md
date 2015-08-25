@@ -6,11 +6,11 @@ hw: true
 
 ## HW Review
 
-What did people have the most trouble figuring out? [ask random](#askrandom){:.random}
+What did people have the most trouble figuring out? {% include random.md %}
 
 ## Programming
 
-Thing big: what was this homework about?
+Thing big: what was this homework about? {% include random.md %}
 
 ## Key Python Ideas
 

@@ -28,9 +28,10 @@ window.onload = ( ->
         this.classList.add('minimize')
     )
 
+  drawButton = document.getElementById('drawbutton')
   for draw in document.getElementsByClassName('random')
     draw.onclick = ( ->
-      alert('heyo!')
+      drawButton.click()
       false
     )
 )

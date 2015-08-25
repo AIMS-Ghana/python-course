@@ -27,6 +27,8 @@ Now create a new Python file (either via hotkeys ctrl-N, or by right clicking
 the project and selecting \"new\...\", or by using the dropdown menus) named
 `hw` (the `.py` extension will be added automatically).
 
+## Practice
+
 **WRITE CODE THAT CAUSES THE STRING `HELLO WORLD` TO APPEAR WHEN YOU RUN THE
 SCRIPT**
 

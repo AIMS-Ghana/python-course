@@ -9,13 +9,20 @@ collections:
   topic:
     output: true
     permalink: topic/:name/
+  note:
+    output: true
+    permalink: note/:name/
+  students:
+    output: false
 defaults:
   -
     scope:
       path: ""
     values:
-      layout: "section"
+      layout: section
+current: "2015-2016"
 exclude:
  - run.sh
+ - run-at-aims.sh
  - Gemfile
  - README.md

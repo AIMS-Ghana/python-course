@@ -1,0 +1,1 @@
+[ask random](#askrandom){:.random}
