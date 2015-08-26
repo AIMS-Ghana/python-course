@@ -31,7 +31,7 @@ Circle, radius 3:
 a: ..., p: ...
 {% endhighlight %}
 
-The `basic_shapes.py` file imports those other files, so you will need to examine it to know what function names to use.
+The `basic_shapes.py` file imports those other files, and then uses *functions* from them.  You will need to figure out how to define functions in Python (and examine `basic_shapes.py` to know what function names to use).
 
 As you work through this homework, you should consider committing your incremental progress.  For example,
 when you get the input parsing working for triangles:
