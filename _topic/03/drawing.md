@@ -7,9 +7,11 @@ warmup: true
 ## Key Research Ideas
 
  - plan to visualize results
+ - "model worlds"
 
 ## Key Python Ideas
 
+ - `dicts` as alternative to complex `if-elif-else`
  - old: defining functions
  - functions as inputs to functions
  - plotting libraries
@@ -35,4 +37,4 @@ After you have modified your code, the `render_shapes2.py` script should produce
 
 ## Project Advice
 
-This is more capability that you need to complete one of the projects.  We also covered thinking about how to extend your existing work, and how to build that work in a way that can be extended.  You will need to do a bit more extension on your own for the project.
+This is more capability that you need to complete [one of the projects]({% include url.lq %}/topic/shape-drawing/).  We also covered thinking about how to extend your existing work, and how to build that work in a way that can be extended.  You will need to do a bit more extension on your own for the project.
