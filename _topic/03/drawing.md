@@ -1,6 +1,7 @@
 ---
 title: Drawing
 warmup: true
+hw: true
 ---
 {% include startup.md %}
 
