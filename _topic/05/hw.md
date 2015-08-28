@@ -1,9 +1,12 @@
-1. numpy array calcs
-2. numpy array Functions
-3. plotting Functions
-4. integration w/ trapezoid method
-5. integration w/ scipy tools
+Write a program `random_pi.py` that:
 
-Next, the file `render_curves.py` identifies several functions for you to implement, and once you do, it will produce a plot of those curves.  Update the `curves.py` file with the relevant definitions.
+Receiving a seed and sample size, generates that many random numbers, uniformly sampled on 0 to 1.
 
-As you work through this homework, you should consider committing your incremental progress.
+Using those random numbers, estimate the value of `pi` by the circle-area method and then by the sphere-volume method.
+
+You program should behave like:
+{% highlight bash %}
+{{ site.hwprompt }} ./random_pi 0 10000
+circle-area pi: ...
+sphere-volume pi: ...
+{% endhighlight %}

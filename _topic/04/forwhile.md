@@ -18,7 +18,7 @@ those items.  Here are several examples:
 
 What does the last iteration correspond to?
 
-## Searching Iteration with `while`
+## Conditional Iteration with `while`
 
 A `while` block loops as long as a condition is met.  It can simulate a `for` loop:
 
@@ -32,8 +32,9 @@ rather than for a fixed number of steps:
 
 ## Advanced Version
 
-We've done two basic loops, `for` loop for the mid-point method
-and `while` loop for bisection root finding.  Now we'll implement another integrator (the Trapezoid Method in `trapeziod.py`) and another root finder (the Secant Method in `secant.py`).
+We use discussed these two loops constructs, `for` loop for the mid-point method and `while` loop for bisection root finding.  
+
+Now your task is to implement another integrator (the Trapezoid Method in `trapeziod.py`) and another root finder (the Secant Method in `secant.py`).
 
 Once you've done so, the following code (already in your homework directory) should work:
 

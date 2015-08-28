@@ -1,12 +1,5 @@
-Write a program `random_pi.py` that:
+In the file `fun_plots.py`, you will find several functions.
 
-Receiving a seed and sample size, generates that many random numbers, uniformly sampled on 0 to 1.
+Implement your own plotting function in `calculus_plotter.py` that plots a function, it's derivative, and it's integral on the same graph.  Use different colors or line types to distinguish the curves and include a legend.
 
-Using those random numbers, estimate the value of `pi` by the circle-area method and then by the sphere-volume method.
-
-You program should behave like:
-{% highlight bash %}
-{{ site.hwprompt }} ./random_pi 0 10000
-circle-area pi: ...
-sphere-volume pi: ...
-{% endhighlight %}
+Finally, edit `make_fun_plots.py` to use your plotting function to make plots for each of the functions in `fun_plots.py`.
