@@ -1,5 +1,5 @@
 ---
-title: "Input: Interactive and Files"
+title: Input and Output
 prep: lists
 ---
 

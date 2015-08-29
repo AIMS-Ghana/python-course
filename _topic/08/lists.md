@@ -1,7 +1,5 @@
 ---
-title: "Collections"
-prep: review
-math: yes
+title: Collections
 ---
 
 ## What is the form of data from experiments?

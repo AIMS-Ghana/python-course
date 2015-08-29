@@ -1,11 +1,6 @@
 ---
-title: Intro to `scipy`
+title: Notes on `scipy`
 ---
-
-## Remember! SIR Task
-
-As we go over the capabilities `scipy` provides, particularly the options for
-parameter fitting, think about what you want to do with the **SIR** model.
 
 ## What is `scipy` good for?
 

@@ -8,6 +8,14 @@ You will write a program that will calculate the dynamics for an SEIR
 system of differential equations and stochastic simulations of that same system (the Gillespie model).  That program should accept input in the form
 of a `json` file and optional output targets for numerical and plotted results.
 
+## References
+
+For an overview of solving dynamical systems using `scipy` and `numpy`, you should
+refer to [this website](http://www.gribblelab.org/compneuro2012/2_Modelling_Dynamical_Systems.html).
+I recommend that you actually follow through that example.
+
+For Gillespie's algorithm and it's relation to ODE model, [see this discussion](http://plaza.ufl.edu/pulliam/training/icddrb/Welcome_files/Pulliam_ICDDRB_Day2.pdf)
+
 ## File Format
 
 ### JSON Input
