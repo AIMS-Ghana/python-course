@@ -146,8 +146,9 @@ personal machine as well.  Then, instead of the above steps, follow these:
 {% highlight text %}
 git config --global user.email "YOURAIMSEMAIL@aims.edu.gh"
 git config --global user.name "YOUR NAME"
+git config --global push.default simple
 cd ~
-git clone -b $USERNAME-hw --single-branch git@github.com:AIMS-Ghana/python-course-homework.git $USERNAME-hw
+git clone -b $USERNAME-hw --single-branch git@github.com:AIMS-Ghana/python-course-homework.git
 {% endhighlight %}
 
 Warning: if you work on both the AIMS machines and your personal machines, your work will
