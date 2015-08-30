@@ -138,3 +138,19 @@ git commit -m "initial commit"
 git push -u origin $USERNAME-hw
 git branch -d master
 {% endhighlight %}
+
+If you have already done these steps on the AIMS laptops and you want to start using
+a personal computer as well, you can do that!  First, create an ssh key for your
+personal machine as well.  Then, instead of the above steps, follow these:
+
+{% highlight text %}
+git config --global user.email "YOURAIMSEMAIL@aims.edu.gh"
+git config --global user.name "YOUR NAME"
+cd ~
+git clone -b $USERNAME-hw --single-branch git@github.com:AIMS-Ghana/python-course-homework.git $USERNAME-hw
+{% endhighlight %}
+
+Warning: if you work on both the AIMS machines and your personal machines, your work will
+not automatically update (*e.g.*, like Dropbox).  You will need to make sure at the end
+of working on either that you (1) use the turnin script to add and commit your work and (2)
+when starting work, you `git pull` to get any work you've done on another machine.
