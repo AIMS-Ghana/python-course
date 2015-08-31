@@ -9,7 +9,7 @@ params = Params(beta=5, gamma=1, mu=1/50, N0=1)
 
 S0, R0 = 0.99, 0.
 I0 = params.N0 - S0 - R0
-Y0 = [ S0, I0, R0 ]
+Y0 = [ S0, I0 ]
 
 tMax = 100
 
@@ -23,13 +23,12 @@ def dSIR(Y, t, beta, gamma, mu, N0):
     @param beta, gamma, nu, N0: model parameters
     @return: [dS, dI]
     """
-    S, I, R = Y
+    S, I = Y
 
     dS = mu * N0 - beta * I * S - mu * S
     dI = beta * I * S - (gamma + mu) * I
-    dR = gamma*I - mu*R
 
-    return [ dS, dI, dR ]
+    return [ dS, dI ]
 
 # Integrate the ODE
 # Warning!  The ODE solver over-writes the initial value.
@@ -37,10 +36,10 @@ solution = scipy.integrate.odeint(dSIR,
                                   Y0,
                                   T,
                                   args = params)
-        
+
 S = solution[:, 0]
 I = solution[:, 1]
-R = solution[:, 2]
+R = params.N0 - S - I
 
 import pylab
 
