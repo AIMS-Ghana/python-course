@@ -1,6 +1,7 @@
 ---
 title: Input and Output
-prep: lists
+hw: true
+warmup: true
 ---
 
 ## Command Line Input
@@ -8,7 +9,7 @@ prep: lists
 Recall how we use python scripts from the console:
 
 ~~~
-$ python3 somescript.py [...optional arguments]
+$ ./somescript.py [...optional arguments]
 ~~~
 
 Inside the script, we can access these optional arguments in a special way:
@@ -143,11 +144,6 @@ the shape, its dimensions, and its geometric properties (this should be exactly
 the `__str__` method results for the corresponding `Shape` class you wrote).
 If the input line is invalid, instead of a line about a shape, the script should
 print a line explaining the error with that line of input.
-
-### Twist: Output!
-
-Add an `-o` option to be used with `-f` that specifies the output file.  Instead
-of printing the output results, write them as lines in the output file.
 
 ### More Examples for Explanation
 

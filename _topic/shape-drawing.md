@@ -25,7 +25,7 @@ If an invalid input file is provided, the program should respond with useful inp
 
 If no output file is provided, the program should draw the shapes for the user in realtime.
 
-If an output file is provide, the program should save a png of the final picture.
+If an output file is provide, the program should save a png of the final picture to an `eps` (postscript) file.
 
 ## Example Usage
 
@@ -40,8 +40,8 @@ Error: ... indicate what is wrong on the first line with an error ...
 ... useful info about usage ...
 {{ site.hwprompt }} ./shape-drawing.py input.csv
 ... real time animation of shape drawing ...
-{{ site.hwprompt }} ./shape-drawing.py input.csv output.png
-{{ site.hwprompt }} ls output.png
+{{ site.hwprompt }} ./shape-drawing.py input.csv output.eps
+{{ site.hwprompt }} ls output.eps
 ... finds plot you just made ...
 {% endhighlight %}
 
