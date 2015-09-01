@@ -1,6 +1,7 @@
+#!/usr/bin/env python3
 __author__ = 'cap10'
 
-## called as $ python3 input_cl2.py -v 1 --somearg "five"
+## called as $ ./input_cl2.py -v 1 --somearg "five"
 
 import argparse
 
