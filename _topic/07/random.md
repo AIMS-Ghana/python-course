@@ -41,3 +41,28 @@ $$
 t \sim e^{-\lambda} \\
 p_i \sim {\lambda_i \over \lambda}
 $$
+
+The rates are:
+
+| event |    rate     |
+|:-----:|:-----------:|
+|  +x   | $\alpha x$  |
+|  -x   | $\beta xy$  |
+|  +y   | $\delta xy$ |
+|  -y   | $\gamma y$  |
+
+so the waiting time for any state is
+
+$$
+\lambda = \alpha x + \gamma y + xy(\beta + \delta) \\
+t \sim Exp(\lambda)
+$$
+
+and the probabilities of which event occurred at that time are
+
+| event |            rate             |
+|:-----:|:---------------------------:|
+|  +x   | ${\alpha x \over \lambda}$  |
+|  -x   | ${\beta xy \over \lambda}$  |
+|  +y   | ${\delta xy \over \lambda}$ |
+|  -y   | ${\gamma y \over \lambda}$  |
