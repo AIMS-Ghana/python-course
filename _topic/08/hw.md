@@ -1,0 +1,1 @@
+Within the outline provided in script `shape_objects.py`, fill in the appropriate definitions.  Modify your previous code to take advantage of the new `Shape` objects.

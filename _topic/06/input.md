@@ -3,6 +3,7 @@ title: Input and Output
 hw: true
 warmup: true
 ---
+{% include startup.md %}
 
 ## Command Line Input
 
