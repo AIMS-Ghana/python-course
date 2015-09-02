@@ -38,6 +38,6 @@ So:
 
 $$
 \lambda = \sum_i \lambda_i \\
-t \~ e^{-\lambda} \\
-p_i \~ {\lambda_i \over \lambda}
+t \sim e^{-\lambda} \\
+p_i \sim {\lambda_i \over \lambda}
 $$
