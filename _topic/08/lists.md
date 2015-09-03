@@ -1,5 +1,8 @@
 ---
 title: Collections
+hw: true
+warmup: true
+math: true
 ---
 
 ## What is the form of data from experiments?
@@ -12,16 +15,21 @@ a single parameter:
 \ddot{x} = -{k \over m}x \rightarrow {k \over m} = \omega^2
 \end{align}
 
-But the physical world is quite messier than that single parameter.  If want to
+Even the Lotke-Volterra model is *really* just one parameter.  But the physical world is quite messier than a single parameter.
+
+If want we to
 determine \\(\omega\\) for some actual spring mass (ignoring that the actual
 physics are more complicated than this idealization), we need to gather many
 data points both to actually solve the equation, but also to account for
 measurement error.
 
-Which is to say, real data are quite a bit more complex than the mostly single
+Real data are quite a bit more complex than the mostly single
 variables we have been working with so far.  They tend to have many samples, and
 samples tend to be a mixture of types of things.  Often times there are samples
 of different kinds of things.
+
+Even if you restrict your future work to pure mathematics, many of the interesting questions are about the number of configurations and proportions of
+of those things that have certain properties.  These combinatorial problems also need many variables.
 
 So in general, we need to be able to work with \"collections\" of things.
 
@@ -37,7 +45,7 @@ A `tuple` is
 {% include relblock.md target="colls_tuples.py" %}
 
 \... a sequence of things, not necessarily the same type.  You use a tuple when
-you need a sequence, but do *not* need to change what is in the sequence.
+you need a sequence, but do *not* need (or want) to change what is in the sequence.
 
 ### `list`
 
@@ -50,7 +58,7 @@ can change the contents of a `list`, either adding, deleting or replacing elemen
 
 ### `range`
 
-You have already worked with `range(...)` a few times.  How do `ranges` compare
+You may have already worked with `range(...)` a few times.  How do `ranges` compare
 to `tuple`s and `list`s?
 
 ### `set`

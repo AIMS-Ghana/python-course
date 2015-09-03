@@ -25,9 +25,9 @@ layout: compress
 </head>
 <body>
 {% capture nav %}{% include nav.md %}{% endcapture %}{{ nav | markdownify }}
-{% if page.collection == "topic" %}
+<!--{% if page.collection == "topic" %}
   <div class="prevnext">{% include daynav.liquid %}</div>
-{% endif %}
+{% endif %}-->
 <div class="content">
 {% include warmup.htm %}
 {{ content }}
