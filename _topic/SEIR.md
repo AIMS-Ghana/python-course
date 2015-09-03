@@ -1,5 +1,6 @@
 ---
 title: SEIR Model Project
+math: true
 ---
 
 ## Project Overview
@@ -7,6 +8,18 @@ title: SEIR Model Project
 You will write a program that will calculate the dynamics for an SEIR
 system of differential equations and stochastic simulations of that same system (the Gillespie model).  That program should accept input in the form
 of a `json` file and optional output targets for numerical and plotted results.
+
+### The Constant Population SEIR Model
+
+$$
+S + E + I + R = N, \dot{N} = 0 \\
+\dot{S} = \mu N - {\beta S I \over N} - \mu S
+\dot{E} = {\beta S I \over N} - \sigma E - \mu E
+\dot{I} = \sigma E - \gamma I - \mu I
+\dot{R} = \gamma I - \mu R
+$$
+
+Feel free to re-arrange these equations as you see fit when implementing the system, but the result must be the same model.
 
 ## References
 
@@ -54,8 +67,7 @@ t, S, E, I, R
 
 If no file for numerical output is provided, it should be output to the screen.
 
-The program should accept a `-g N` option, which means produce N Gillespie simulations.  Gillespie simulations
-should run until there are only S and R populations.  The format for simulation output should be:
+The program should accept a `-g N` option, which means produce N Gillespie simulations.  The format for simulation output should be:
 
 {% highlight text %}
 n, t, S, E, I, R
@@ -92,6 +104,9 @@ Error: the parameter input had negative values for whichever inputs
 {{ site.hwprompt }} ./SEIR.py config2.json target.csv target.png
 {{ site.hwprompt }} ls target.*
 ... finds the csv and png you just created ...
+{{ site.hwprompt }} ./SEIR.py config2.json -g 10 target.csv target.png
+{{ site.hwprompt }} ls target.*
+... finds the csv and png you just created, should be Gillespie runs ...
 {% endhighlight %}
 
 ## Process
