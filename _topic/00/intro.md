@@ -83,7 +83,7 @@ will suggest tasks you should complete for each project.
 The project problems are:
 
  - [a shape-drawing program]({% include url.lq %}/topic/shape-drawing/)
- - [simulating the SEIR model]({% include url.lq %}/topic/SEIR/)
+ - [simulating the SEIR model]({% include url.lq %}/topic/seir/)
 
 ## Class Rules
 

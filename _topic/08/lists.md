@@ -4,6 +4,7 @@ hw: true
 warmup: true
 math: true
 ---
+{% include startup.md %}
 
 ## What is the form of data from experiments?
 
