@@ -13,9 +13,9 @@ of a `json` file and optional output targets for numerical and plotted results.
 
 $$
 S + E + I + R = N, \dot{N} = 0 \\
-\dot{S} = \mu N - {\beta S I \over N} - \mu S
-\dot{E} = {\beta S I \over N} - \sigma E - \mu E
-\dot{I} = \sigma E - \gamma I - \mu I
+\dot{S} = \mu N - {\beta S I \over N} - \mu S\\
+\dot{E} = {\beta S I \over N} - \sigma E - \mu E\\
+\dot{I} = \sigma E - \gamma I - \mu I\\
 \dot{R} = \gamma I - \mu R
 $$
 
