@@ -17,15 +17,15 @@ The input will be a csv file, with each row in this format (`f` means floating p
 (SQUARE|TRIANGLE|CIRCLE|RECTANGLE), (RED|ORANGE|YELLOW|GREEN|BLUE|PURPLE), r, f, f, f
 {% endhighlight %}
 
-The floating point numbers are (total area, x-origin, y-origin).  The RECTANGLE option means a golden rectangle, TRIANGLE means an equilateral triangle, and the origins provide relative position of the shape.  The angle is the rotation of the shape.
+The floating point numbers are (total area, x-origin, y-origin).  The RECTANGLE option means a golden rectangle, TRIANGLE means an equilateral triangle, and the origins provide relative position of the shape.  The angle is the rotation of the shape relative to EAST == 0.  **NOTE: THERE IS NO HEADER ON THESE FILES**.
 
-If an invalid input file is provided, the program should respond with useful input.
+If an invalid input file is provided, the program should respond with useful input, particularly the line number the error appears on, and what particularly is wrong with the line (*e.g.* an invalid shape or color, numerical inputs outside of their appropriate ranges, non-numbers supplied where numbers should be, too short lines).
 
 ## Output Format
 
-If no output file is provided, the program should draw the shapes for the user in realtime.
+If no output file is provided, the program should draw the shapes for the user in realtime, and then quit on click.
 
-If an output file is provide, the program should save a png of the final picture to an `eps` (postscript) file.
+If an output file is provide, the program should save the final canvas to an `eps` (postscript) file.
 
 ## Example Usage
 

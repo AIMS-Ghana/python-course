@@ -25,7 +25,7 @@ Feel free to re-arrange these equations as you see fit when implementing the sys
 
 For an overview of solving dynamical systems using `scipy` and `numpy`, you should
 refer to [this website](http://www.gribblelab.org/compneuro2012/2_Modelling_Dynamical_Systems.html).
-I recommend that you actually follow through that example.
+I recommend that you actually follow through that example.  There is also an [example on the course page]({% include url.lq %}/topic/numpy-scipy/).
 
 For Gillespie's algorithm and it's relation to ODE model, [see this discussion](http://plaza.ufl.edu/pulliam/training/icddrb/Welcome_files/Pulliam_ICDDRB_Day2.pdf)
 
@@ -39,8 +39,8 @@ The format of the optional json file is (`+f` means non-negative floating point 
 {
   "beta": +f,
   "sigma": +f,
-  "rho": +f,
-  "delta": +f,
+  "gamma": +f,
+  "mu": +f,
   "Y0": [+i, +i, +i, +i],
   "tmax": ++f
 }
@@ -48,7 +48,8 @@ The format of the optional json file is (`+f` means non-negative floating point 
 
 where *Y0 = (S0,E0,I0,R0)*.
 
-If there is some input error, your program should provide a helpful error message.
+If there is some input error, your program should provide a helpful error message.  Here are two files,
+one that should work and one that should return an error: [works]({% include linkmunge.lq %}/params.json) and [does not]({% include linkmunge.lq %}/params.json)
 
 ### Numerical Output
 
@@ -91,8 +92,8 @@ If no file for plotting is provided, the code should save a "plot.png" file.
 In summary, you program should run as:
 
 {% highlight bash %}
-{{ site.hwprompt }} ./SEIR.py withnegativevalues.json
-Error: the parameter input had negative values for whichever inputs
+{{ site.hwprompt }} ./SEIR.py badparams.json
+Error: ... e.g., the parameter input had negative values for whichever inputs ...
 {{ site.hwprompt }} ./SEIR.py
 ... same as next line ...
 {{ site.hwprompt }} ./SEIR.py -h
