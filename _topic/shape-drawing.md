@@ -21,6 +21,9 @@ The floating point numbers are (total area, x-origin, y-origin).  The RECTANGLE 
 
 If an invalid input file is provided, the program should respond with useful input, particularly the line number the error appears on, and what particularly is wrong with the line (*e.g.* an invalid shape or color, numerical inputs outside of their appropriate ranges, non-numbers supplied where numbers should be, too short lines).
 
+Here are two files,
+one that should work and one that should return an error: [works]({% include linkmunge.lq %}/shapes.csv) and [does not]({% include linkmunge.lq %}/badshapes.csv)
+
 ## Output Format
 
 If no output file is provided, the program should draw the shapes for the user in realtime, and then quit on click.
