@@ -49,7 +49,7 @@ The format of the optional json file is (`+f` means non-negative floating point 
 where *Y0 = (S0,E0,I0,R0)*.
 
 If there is some input error, your program should provide a helpful error message.  Here are two files,
-one that should work and one that should return an error: [works]({% include linkmunge.lq %}/params.json) and [does not]({% include linkmunge.lq %}/params.json)
+one that should work and one that should return an error: [works]({% include linkmunge.lq %}/params.json) and [does not]({% include linkmunge.lq %}/badparams.json)
 
 ### Numerical Output
 
